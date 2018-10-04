@@ -31,6 +31,8 @@ The components for querying the data sources and evaluating the different models
 
 We have yet no decided under what license we will release our project's code, but in all likelihood it will be an open source license like the [MIT License](https://choosealicense.com/licenses/mit/) or [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/). 
 
+
 ## More information 
 
 Check the [documentation](https://github.com/marianoju/selectDiff/docs] for more detailed information about the progress of this project. 
+
