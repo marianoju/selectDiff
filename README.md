@@ -34,5 +34,5 @@ We have yet no decided under what license we will release our project's code, bu
 
 ## More information 
 
-Check the [documentation](https://github.com/marianoju/selectDiff/docs] for more detailed information about the progress of this project. 
+Check the [documentation](https://github.com/marianoju/selectDiff/docs) for more detailed information about the progress of this project. 
 
