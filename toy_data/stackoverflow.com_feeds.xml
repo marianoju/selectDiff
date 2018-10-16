@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">Recent Questions - Stack Overflow</title>
+    <link rel="self" href="https://stackoverflow.com/feeds" type="application/atom+xml" />
+    <link rel="alternate" href="https://stackoverflow.com/questions" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2018-10-16T11:51:19Z</updated>
+    <id>https://stackoverflow.com/feeds</id>
+    <creativeCommons:license>http://www.creativecommons.org/licenses/by-sa/3.0/rdf</creativeCommons:license> 
+    <entry>
+        <id>https://stackoverflow.com/q/52834840</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Filepath of file in the networwork</title>
+            <category scheme="https://stackoverflow.com/tags" term="networking" />
+            <category scheme="https://stackoverflow.com/tags" term="path" />
+        <author>
+            <name>Spy</name>
+            <uri>https://stackoverflow.com/users/7136591</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834840/filepath-of-file-in-the-networwork" />
+        <published>2018-10-16T11:50:38Z</published>
+        <updated>2018-10-16T11:50:38Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Assume that I have a file named file.txt in my desktop
+The path to that file would be /Users/username/Desktop/file.txt&lt;/p&gt;
+
+&lt;p&gt;But what if that file is located in a server in the network.
+How can I get the file path from my desktop? &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834839</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Use both JSP and React js</title>
+            <category scheme="https://stackoverflow.com/tags" term="reactjs" />
+            <category scheme="https://stackoverflow.com/tags" term="jsp" />
+        <author>
+            <name>Tobi</name>
+            <uri>https://stackoverflow.com/users/10059232</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834839/use-both-jsp-and-react-js" />
+        <published>2018-10-16T11:50:38Z</published>
+        <updated>2018-10-16T11:50:38Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Is it possible after I send a request to my server from React to not send back the response to React, but open a page from server and let my server retrieve all the process? &lt;/p&gt;
+
+&lt;p&gt;The thing is that I want to play a popup with a course and all the info are being sent to the server and there is already an implementation with jQuery and JavaScript.&lt;/p&gt;
+
+&lt;p&gt;So can I play a popup independently of React? Thank you!&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834838</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Constant sample based background subtraction and interpolation</title>
+            <category scheme="https://stackoverflow.com/tags" term="matlab" />
+            <category scheme="https://stackoverflow.com/tags" term="interpolation" />
+            <category scheme="https://stackoverflow.com/tags" term="spectrum" />
+        <author>
+            <name>Umar</name>
+            <uri>https://stackoverflow.com/users/1949014</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834838/constant-sample-based-background-subtraction-and-interpolation" />
+        <published>2018-10-16T11:50:37Z</published>
+        <updated>2018-10-16T11:50:37Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I need your expertise for a problem. I have the following matrix with different columns.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Time            subsamp raw     filt_BG filter
+230.5382060     1       1       1       0
+230.5382176     2       1       1       0
+230.5382292     1       4       0       1
+230.5382407     2       4       0       1
+230.5382523     1       3       0       1
+230.5382639     2       3       0       1
+230.5382755     1       2       1       0
+230.5382870     2       2       1       0
+230.5382986     1       2       0       1
+230.5383102     2       2       0       1
+230.5383218     1       1       0       1
+230.5383333     2       1       0       1
+230.5383449     1       3       1       0
+230.5383565     2       3       1       0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It contains two different type of raw data (column 3). Each type of raw data has same no. of sub sample (column 2). The &#39;filt_BG&#39; and &#39;filter&#39; seprate the type of data. I try to explain the problem and required solution with the following diagram. 
+&lt;a href=&quot;https://i.stack.imgur.com/7XHFG.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/7XHFG.png&quot; alt=&quot;enter image description here&quot;&gt; &lt;/a&gt;
+In the above diagram (leftside), raw data is plotted as a function of time. The colors are representing different windows(subsample) &#39;sig&#39; and &#39;BG&#39;based on &#39;filter&#39; and &#39;filt_BG&#39;, repectively. I want to do interpolation from the window &#39;BG1&#39; to the window &#39;BG2&#39;(subsample to subsample), so that interpolated data can be subtracted (subsample to subsample) from &#39;sig1&#39; and &#39;sig2&#39;. Similarly from &#39;BG2&#39; to &#39;BG3&#39; interpolation and subtraction from &#39;sig3&#39; and &#39;sig4&#39;. This gives me &#39;solution1&#39; (upper right). Now, if &#39;BG3&#39; do not exsist then I want to use only &#39;BG2&#39; for subtraction from &#39;sig3&#39; and &#39;sig4&#39;(solution2, lower right). The solution matrix would be something like below.!!! Thank you for your ideas/solution.!!! Please keep in mind that I shall have millions of data points not as simple data as described here. Also, I do not have any toolbox but only the matlab available. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Time            subsamp solution1   solution2   
+230.5382060     1       NaN         NaN
+230.5382176     2       NaN         NaN
+230.5382292     1       2.5         2.5
+230.5382407     2       2.5         2.5
+230.5382523     1       1.5         1.5
+230.5382639     2       1.5         1.5
+230.5382755     1       NaN         NaN
+230.5382870     2       NaN         NaN
+230.5382986     1       -0.5        0
+230.5383102     2       -0.5        0
+230.5383218     1       -1.5        -1
+230.5383333     2       -1.5        -1
+230.5383449     1       NaN         NaN
+230.5383565     2       NaN         NaN 
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834837</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Rewind and forward options for ionic2 streamaudio</title>
+            <category scheme="https://stackoverflow.com/tags" term="ionic2" />
+            <category scheme="https://stackoverflow.com/tags" term="ionic2-media" />
+        <author>
+            <name>Sa E Chowdary</name>
+            <uri>https://stackoverflow.com/users/4736703</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834837/rewind-and-forward-options-for-ionic2-streamaudio" />
+        <published>2018-10-16T11:50:33Z</published>
+        <updated>2018-10-16T11:50:33Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Im using &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ ionic cordova plugin add cordova-plugin-streaming-media
+$ npm install --save @ionic-native/streaming-media
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;for playing my audio files,its working great 
+i need to add more options like title for the song,rewind and forward options as well.
+can anyone suggest me how cani achive that.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834836</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to use setOnCheckedChangeListener for multiple checkbox [Dynamic View]</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="android" />
+            <category scheme="https://stackoverflow.com/tags" term="android-checkbox" />
+            <category scheme="https://stackoverflow.com/tags" term="programmatically" />
+        <author>
+            <name>Sandeep Patel</name>
+            <uri>https://stackoverflow.com/users/9449585</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834836/how-to-use-setoncheckedchangelistener-for-multiple-checkbox-dynamic-view" />
+        <published>2018-10-16T11:50:33Z</published>
+        <updated>2018-10-16T11:50:33Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;i&#39;ll create a one dynamic view. in this view i can design one dynamic view with &lt;strong&gt;5 CheckBox&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;i&#39;ll try below code for dynamic view :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;private void chkdynamic() {
+        final String name[] = {&quot;Credit Card&quot;, &quot;Debit Card&quot;,&quot;Bank Deposit&quot;,&quot;in-app Purchase&quot;, &quot;PayPal&quot;};
+        /*int Array_Count=0;
+        String[] Str_Array = new String[0];
+
+        Array_Count = Str_Array.length;*/
+
+        for (int i = 0; i &amp;lt; name.length; i++)
+        {
+
+            final View v = new View(this);
+            v.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, 5));
+            v.setBackgroundColor(getResources().getColor(R.color.border_gray));
+
+            LinearLayout row = new LinearLayout(this);
+            row.setOrientation(LinearLayout.VERTICAL);
+            row.setId(i);
+            row.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT));
+            final CheckBox checkBox = new CheckBox(activity);
+            checkBox.setId(i);
+            checkBox.setText(name[i]);
+            checkBox.setTextColor(getResources().getColor(R.color.gray_text));
+            checkBox.setButtonDrawable(getResources().getDrawable(R.drawable.chk_btn));
+            checkBox.setPadding(20,60,0,60);
+            checkBox.setTextSize(20);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+            );
+            params.setMargins(60, 0, 0, 0);
+            checkBox.setLayoutParams(params);
+            row.addView(checkBox);
+            row.addView(v);
+            ll_dynamic.addView(row);
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;as per the above code 5 checkbox created as per the name length. &lt;/p&gt;
+
+&lt;p&gt;My question is Now &lt;strong&gt;How to i &lt;code&gt;setOnCheckedChangeListener&lt;/code&gt; for checkbox&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;if i check &lt;code&gt;CheckBox&lt;/code&gt; one then other &lt;code&gt;CheckBox&lt;/code&gt; Uncheck how to this possible in dynamic view.&lt;/p&gt;
+
+&lt;p&gt;please suggest me any solution.  &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834834</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">how to create a shopping cart in reactjs?</title>
+            <category scheme="https://stackoverflow.com/tags" term="reactjs" />
+            <category scheme="https://stackoverflow.com/tags" term="ecmascript-6" />
+        <author>
+            <name>hamid</name>
+            <uri>https://stackoverflow.com/users/10117228</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834834/how-to-create-a-shopping-cart-in-reactjs" />
+        <published>2018-10-16T11:50:28Z</published>
+        <updated>2018-10-16T11:50:28Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;i&#39;m trying to create a shopping cart with reactjs this is my code so far...&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import React,{Component} from &#39;react&#39;
+import Grid from &#39;@material-ui/core/Grid&#39;;
+import Paper from &#39;@material-ui/core/Paper&#39;;
+import {Link} from &quot;react-router-dom&quot;
+class Food extends Component{
+    constructor(props){
+     super(props);
+     this.state = {
+    total: 0,
+      };
+      this.sum = this.sum.bind(this);
+    }
+
+    sum(){
+
+    }
+   render(){
+       if(this.props.product !== undefined){
+
+       var items = this.props.product.map((index) =&amp;gt; {
+        let grid = 12/this.props.product.length;
+        let menu_item_href = &#39;/menu-item&#39;;
+
+           return (
+
+&amp;lt;Grid item xs={grid} key={index.ProductID}&amp;gt;
+&amp;lt;Paper className=&quot;food-item&quot;&amp;gt;
+&amp;lt;div&amp;gt;
+    &amp;lt;h3&amp;gt;{index.Name}&amp;lt;/h3&amp;gt;
+    &amp;lt;p&amp;gt;Excerpt: {index.Excerpt}&amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt;price: {index.Price}&amp;lt;/p&amp;gt;
+    &amp;lt;div onClick={this.sum}&amp;gt;sum&amp;lt;/div&amp;gt;
+   &amp;lt;Link to={menu_item_href}&amp;gt;&amp;lt;p&amp;gt;more...&amp;lt;/p&amp;gt;&amp;lt;/Link&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/Paper&amp;gt; 
+&amp;lt;/Grid&amp;gt; 
+
+           )
+       })
+
+    }
+      return(
+
+         &amp;lt;div&amp;gt;
+&amp;lt;h2&amp;gt;{this.props.cat}&amp;lt;/h2&amp;gt;
+&amp;lt;Grid container spacing={24}&amp;gt;
+{items}
+&amp;lt;/Grid&amp;gt;
+{this.state.total}
+         &amp;lt;/div&amp;gt;
+
+       );
+   }
+}
+export default Food;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;as you see i map trough an array and create shop items, i want create a shop cart that works like this:
+when a user click on &quot;add item&quot; button the name and the number of item add to bill and the price sum with total and total update. i now its complicated if you now any tutorial that might help me to create an shopping cart please let me now and i would be appreciate.thank youreact  &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834832</id>
+        <re:rank scheme="https://stackoverflow.com">-1</re:rank>
+        <title type="text">What is the minimal setup for a pure Kubernetes cluster on cheap, bare metal servers?</title>
+            <category scheme="https://stackoverflow.com/tags" term="kubernetes" />
+        <author>
+            <name>Wouter</name>
+            <uri>https://stackoverflow.com/users/495815</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834832/what-is-the-minimal-setup-for-a-pure-kubernetes-cluster-on-cheap-bare-metal-ser" />
+        <published>2018-10-16T11:50:15Z</published>
+        <updated>2018-10-16T11:50:15Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m currently exploring Kubernetes and considering a minimal cluster setup to be launched within a few months to a year. The cluster would be based on:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Multiple low cost, dedicated hardware servers (no ECC RAM, no RAID)&lt;/li&gt;
+&lt;li&gt;Running as bare-metal with Ubuntu 18.04 LTS&lt;/li&gt;
+&lt;li&gt;Using Ceph as shared FS running inside Kubernetes using rook.io (currently in beta, but I can wait till the stable release)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My idea is that Kubernetes would be able to keep the applications highly available despite the use of cheap hardware. I can have 3x as many machines for the same price as 1 expensive &quot;traditional&quot; server.&lt;/p&gt;
+
+&lt;p&gt;A few questions that come up are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What would be the minimum hardware requirement for such a setup? (primary quesion)&lt;/li&gt;
+&lt;li&gt;What software might go well with running and managing this, with a preference for cheap and open source?&lt;/li&gt;
+&lt;li&gt;Is it a good idea to use cheap, dedicated servers (i.e. no RAID, no ECC RAM), but have more machines&lt;/li&gt;
+&lt;li&gt;Is it a good idea to have Ceph inside Kubernetes, like rook.io is doing?&lt;/li&gt;
+&lt;li&gt;Am I missing anything / advice on making the setup?&lt;/li&gt;
+&lt;/ul&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834831</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How do I create a draggable plot line in Highcharts?</title>
+            <category scheme="https://stackoverflow.com/tags" term="highcharts" />
+            <category scheme="https://stackoverflow.com/tags" term="jstockchart" />
+        <author>
+            <name>Василий Поляков</name>
+            <uri>https://stackoverflow.com/users/8591968</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834831/how-do-i-create-a-draggable-plot-line-in-highcharts" />
+        <published>2018-10-16T11:50:13Z</published>
+        <updated>2018-10-16T11:50:13Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;How do I create a draggable plotline in Highcharts? I couldn&#39;t find info about this. See please screenshot. You will see a green line on the screenshot. This plotline must be oriented on xAxis and draggable with max and min value on the axis Х. Can you help me? maybe some suggestion or link to official docs. Thank you in advanced.
+&lt;a href=&quot;https://i.stack.imgur.com/KphRf.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;screenshot&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;see pls also some short video&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/open?id=1sHeIZU1S5M15yxbzKWQrTE44pdrUz7PW&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://drive.google.com/open?id=1sHeIZU1S5M15yxbzKWQrTE44pdrUz7PW&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834828</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">EPPLUS convert list to Excel with bytearray column.</title>
+            <category scheme="https://stackoverflow.com/tags" term="c#" />
+            <category scheme="https://stackoverflow.com/tags" term="sql" />
+            <category scheme="https://stackoverflow.com/tags" term="arrays" />
+            <category scheme="https://stackoverflow.com/tags" term="epplus" />
+        <author>
+            <name>Halit D</name>
+            <uri>https://stackoverflow.com/users/6577912</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834828/epplus-convert-list-to-excel-with-bytearray-column" />
+        <published>2018-10-16T11:50:06Z</published>
+        <updated>2018-10-16T11:50:06Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I want to convert a List from DBContext to generate an Excel file. I succeded so far, but I stuck on one of the table which is contains bytearray(image).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    ExcelWorksheet ResourcExcelWorksheet = pck.Workbook.Worksheets.Add(&quot;Resources&quot;);
+            ResourcExcelWorksheet.Cells[1, 4, ResourcesList.Capacity, 4].Style.Numberformat.Format = &quot;dd-MM-yyyy HH:mm:ss&quot;;
+            ResourcExcelWorksheet.Cells[&quot;A1&quot;].LoadFromCollection(ResourcesList, true);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When I run this snippet, target cell contains only &#39;137&#39; should be &#39;0x89504E470D0A1A0A0000000D4948.......&#39; like I see on sql server instead of 137.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834826</id>
+        <re:rank scheme="https://stackoverflow.com">-1</re:rank>
+        <title type="text">API Documentation tool used for razorpay payment gateway?</title>
+            <category scheme="https://stackoverflow.com/tags" term="api" />
+            <category scheme="https://stackoverflow.com/tags" term="documentation" />
+            <category scheme="https://stackoverflow.com/tags" term="payment-gateway" />
+            <category scheme="https://stackoverflow.com/tags" term="razorpay" />
+        <author>
+            <name>Rex</name>
+            <uri>https://stackoverflow.com/users/6298600</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834826/api-documentation-tool-used-for-razorpay-payment-gateway" />
+        <published>2018-10-16T11:49:53Z</published>
+        <updated>2018-10-16T11:49:53Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;&lt;a href=&quot;https://docs.razorpay.com/v1/docs&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://docs.razorpay.com/v1/docs&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;What tool was used to do this API documentation for razorpay payment gateway?&lt;/p&gt;
+
+&lt;p&gt;Slate? PostMan documentation? Swagger? or something else?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834783</id>
+        <re:rank scheme="https://stackoverflow.com">-2</re:rank>
+        <title type="text">Remove tags and elements in it with preg_replace PHP</title>
+            <category scheme="https://stackoverflow.com/tags" term="php" />
+            <category scheme="https://stackoverflow.com/tags" term="preg-replace" />
+        <author>
+            <name>ShockingShell</name>
+            <uri>https://stackoverflow.com/users/10488484</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834783/remove-tags-and-elements-in-it-with-preg-replace-php" />
+        <published>2018-10-16T11:47:27Z</published>
+        <updated>2018-10-16T11:50:16Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have this HTML line when I view my localhost page&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a class=3D&quot;moz-txt-link-abbrevi=ated&quot; href=3D&quot;http://www.skyberate.nl&quot;&amp;gt;www.skyberate.nl&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I want to remove the &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;a class=3D&quot;moz-txt-link-abbrevi=ated&quot; href=3D&quot;http://www.skyberate.nl&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So pretty much preg replace everything between the &lt;code&gt;&amp;lt;a&lt;/code&gt; and &lt;code&gt;&amp;gt;&lt;/code&gt; to nothing since I&#39;ll get out the &lt;code&gt;&amp;lt;/a&amp;gt;&lt;/code&gt; at the end with string replace, and I cannot string replace the class since the href in it is always different.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve tried this &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$outputstr = preg_replace(&#39;/&amp;lt;a[^&amp;gt;]*&amp;gt;.*?&amp;lt;\/a&amp;gt;/&#39;, &#39;&#39;, $outputstr);&lt;/code&gt; &lt;/p&gt;
+
+&lt;p&gt;But then, of course, my whole line disappears because it&#39;s removing everything between &lt;code&gt;&amp;lt;a&lt;/code&gt; to &lt;code&gt;&amp;lt;/a&amp;gt;&lt;/code&gt; and all I need is the content without the class tags.&lt;/p&gt;
+
+&lt;p&gt;Anyone who can point me in the right direction?&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve tried using&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$outputstr = str_replace(&#39;&amp;lt;/a&amp;gt;&#39;,&#39;&#39;,$outputstr);&lt;/code&gt; to take out my last &lt;code&gt;&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And then &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;$outputstr = preg_replace(&#39;/&amp;lt;a[^&amp;gt;]*.*?\/&amp;gt;/&#39;, &#39;&#39;, $outputstr);&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;in the hope to remove the &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;a class=3D&quot;moz-txt-link-abbrevi=ated&quot; href=3D&quot;http://www.skyberate.nl&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Any help would be appreciated!&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834762</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">modules work in python shell but not in jupyter notebooks</title>
+            <category scheme="https://stackoverflow.com/tags" term="python" />
+        <author>
+            <name>jan kowal</name>
+            <uri>https://stackoverflow.com/users/10478801</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834762/modules-work-in-python-shell-but-not-in-jupyter-notebooks" />
+        <published>2018-10-16T11:46:13Z</published>
+        <updated>2018-10-16T11:50:13Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;since beginning with Python, I have run into this problem multiple times while trying to install and use different packages. In this case, I&#39;ve been trying to install geopy. I used:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pip3 install geopy
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and got :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Collecting geopy
+Using cached 
+https://files.pythonhosted.org/packages/f3/b4/c8842fc6a07fc95d6887370768850885382b47bf52f5cd8b6a4ae1b6f4d9/geopy-1.17.0-py2.py3-none-any.whl
+Collecting geographiclib&amp;lt;2,&amp;gt;=1.49 (from geopy)
+Installing collected packages: geographiclib, geopy
+Successfully installed geographiclib-1.49 geopy-1.17.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, I tried to make sure it installed, but I got:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;geopy --version
+geopy: command not found
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I tried &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install python-geopy
+[sudo] password for jan: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+python-geopy is already the newest version (1.11.0+ds1-1).
+0 upgraded, 0 newly installed, 0 to remove and 11 not upgraded.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I also tried using it in Jupyter Notebooks:
+    import geopy&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;   ---------------------------------------------------------------------------
+    ModuleNotFoundError                       Traceback (most recent call last)
+    &amp;lt;ipython-input-1-99b9d2081153&amp;gt; in &amp;lt;module&amp;gt;()
+    ----&amp;gt; 1 import geopy
+
+    ModuleNotFoundError: No module named &#39;geopy&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I am not sure, because noob, but I think it might have something to do with the fact Python 2.7 was by default installed with my distribution of Ubuntu, and I installed Python3 and have been using it instead. I added Python = Python3 in the first line of ~/.bashrc in hopes of fixing that. This has happened numerous times before to me with other packages. Please help. Any criticism is welcomed, sorry if I didn&#39;t conform to stackoverflow etiquette in any way (still a noob).&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834708</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Getting Values from a SOAP Response in PHP</title>
+            <category scheme="https://stackoverflow.com/tags" term="php" />
+            <category scheme="https://stackoverflow.com/tags" term="soap" />
+            <category scheme="https://stackoverflow.com/tags" term="soap-client" />
+        <author>
+            <name>Sajeev</name>
+            <uri>https://stackoverflow.com/users/2765454</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834708/getting-values-from-a-soap-response-in-php" />
+        <published>2018-10-16T11:43:27Z</published>
+        <updated>2018-10-16T11:50:08Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m getting a response as the below from the public WSDL &lt;a href=&quot;http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;How can I get the sISOCodein to a php variable?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;
+&amp;lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&amp;gt;
+    &amp;lt;soap:Body&amp;gt;
+        &amp;lt;m:CountryCurrencyResponse xmlns:m=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;&amp;gt;
+            &amp;lt;m:CountryCurrencyResult&amp;gt;
+                &amp;lt;m:sISOCode&amp;gt;INR&amp;lt;/m:sISOCode&amp;gt;
+                &amp;lt;m:sName&amp;gt;Rupees&amp;lt;/m:sName&amp;gt;
+            &amp;lt;/m:CountryCurrencyResult&amp;gt;
+        &amp;lt;/m:CountryCurrencyResponse&amp;gt;
+    &amp;lt;/soap:Body&amp;gt;
+&amp;lt;/soap:Envelope&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I have written the code as below&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$wsdl   = &quot;http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL&quot;;
+$client = new SoapClient($wsdl, array(&#39;trace&#39;=&amp;gt;1));  // The trace param will show you errors stack
+
+// web service input params
+$request_param = array(&quot;sCountryISOCode&quot; =&amp;gt; &quot;IN&quot;);
+$responce_param = null;
+try
+{
+    $responce_param = $client-&amp;gt;CountryCurrency($request_param);
+    $xml = simplexml_load_string($responce_param);
+    foreach ($xml-&amp;gt;xpath(&#39;//CountryCurrencyResult&#39;) as $item)
+    {
+        print_r($item);
+    }
+}
+catch (Exception $e) 
+{ 
+    echo &quot;&amp;lt;h2&amp;gt;Exception Error!&amp;lt;/h2&amp;gt;&quot;; 
+    echo $e-&amp;gt;getMessage(); 
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;How can I get the Parse the response and get the values in to the variables?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834706</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Optimize streaming for html5 video player</title>
+            <category scheme="https://stackoverflow.com/tags" term="video-streaming" />
+            <category scheme="https://stackoverflow.com/tags" term="html5-video" />
+            <category scheme="https://stackoverflow.com/tags" term="mpeg-dash" />
+            <category scheme="https://stackoverflow.com/tags" term="vimeo-player" />
+            <category scheme="https://stackoverflow.com/tags" term="amazon-elastic-transcoder" />
+        <author>
+            <name>Shlomo Meyer</name>
+            <uri>https://stackoverflow.com/users/5999587</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834706/optimize-streaming-for-html5-video-player" />
+        <published>2018-10-16T11:43:20Z</published>
+        <updated>2018-10-16T11:50:16Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;We are using video.js (an html5 media player) to play our videos. The video files are stored on AWS s3 and we are streaming them with the html5 native streaming for  tags.&lt;/p&gt;
+
+&lt;p&gt;Our goal is to get the highest quality video that the user&#39;s device, browser and internet speed can handle.&lt;/p&gt;
+
+&lt;p&gt;It seems to me that we need to break the media into different formats and then download the correct media based on the user. Also, I don&#39;t know if this is necessary but maybe we need to use adaptive bit streaming like MPEG-DASH to stream the video in segments and optimize each segment based on network conditions.&lt;/p&gt;
+
+&lt;p&gt;Possible solutions:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Use white label Vimeo player,&lt;/li&gt;
+&lt;li&gt;Continue using html5 player with vimeo url (I don&#39;t know if that will help)&lt;/li&gt;
+&lt;li&gt;Use Amazon Elastic Transcoder to break down the video into different formats and then some other service to optimize and dowload the right format for the user.&lt;/li&gt;
+&lt;li&gt;Use an implementation of MPEG/DASH&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;What would be the best solution?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834699</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">CBCentralManger Delegate method behaves differently in iOS 11 and below iOS 11 when central manager state is CBManagerStatePoweredOff</title>
+            <category scheme="https://stackoverflow.com/tags" term="ios" />
+            <category scheme="https://stackoverflow.com/tags" term="iphone" />
+            <category scheme="https://stackoverflow.com/tags" term="core-bluetooth" />
+            <category scheme="https://stackoverflow.com/tags" term="cbperipheral" />
+            <category scheme="https://stackoverflow.com/tags" term="cbcentralmanager" />
+        <author>
+            <name>Hemant Makar</name>
+            <uri>https://stackoverflow.com/users/5180348</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834699/cbcentralmanger-delegate-method-behaves-differently-in-ios-11-and-below-ios-11-w" />
+        <published>2018-10-16T11:42:55Z</published>
+        <updated>2018-10-16T11:50:22Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;CBCentralManger Delegate method behaves differently in iOS 11 and below iOS 11&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Below iOS 11:&lt;/strong&gt; After updating the CBCentralMangaer state to &lt;strong&gt;CBManagerStatePoweredOff&lt;/strong&gt; state CentralManager delegate &lt;strong&gt;-(void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error&lt;/strong&gt; is calling and connected peripheral will get disconnect.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;iOS 11&lt;/strong&gt;  After updating the CBCentralMangaer state to &lt;strong&gt;CBManagerStatePoweredOff&lt;/strong&gt; state central manager disconnect delegate &lt;strong&gt;didDisconnectPeripheral&lt;/strong&gt; is not calling.&lt;/p&gt;
+
+&lt;p&gt;I want disconnect delegate should invoked in iOS 11, So How can I resolve this issue in iOS 11.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834656</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Change order of tab bar items</title>
+            <category scheme="https://stackoverflow.com/tags" term="ios" />
+            <category scheme="https://stackoverflow.com/tags" term="swift" />
+            <category scheme="https://stackoverflow.com/tags" term="uitabbarcontroller" />
+        <author>
+            <name>user308123</name>
+            <uri>https://stackoverflow.com/users/10483390</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834656/change-order-of-tab-bar-items" />
+        <published>2018-10-16T11:40:05Z</published>
+        <updated>2018-10-16T11:50:29Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m having a view which has a tab bar at the bottom. Now I want to change the items of the tab bar based on iPhone and iPad (i.e. different orders for iPhone and iPad).&lt;/p&gt;
+
+&lt;p&gt;In &lt;code&gt;viewDidLoad&lt;/code&gt; if I do something like  &lt;code&gt;self.viewControllers.count&lt;/code&gt;, I get the proper count of tab bars. But how to proceed from there in order to change the order of tab bar items I can&#39;t figure out. I mean how can I get the index of each of the viewcontrollers so that I can rearrange their indexes I can&#39;t figure out...&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834607</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">MongoDB Aggregate: Sorting by existing values first</title>
+            <category scheme="https://stackoverflow.com/tags" term="node.js" />
+            <category scheme="https://stackoverflow.com/tags" term="mongodb" />
+            <category scheme="https://stackoverflow.com/tags" term="mongoose" />
+        <author>
+            <name>babak abadkheir</name>
+            <uri>https://stackoverflow.com/users/5677187</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834607/mongodb-aggregate-sorting-by-existing-values-first" />
+        <published>2018-10-16T11:36:45Z</published>
+        <updated>2018-10-16T11:50:41Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;My user has this field :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;interestedIn: [{
+        type: String,
+        enum: [
+            &#39;art&#39;,
+            &#39;sport&#39;,
+            &#39;news&#39;,
+            &#39;calture&#39;,
+            ...
+        ],
+    }],
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and my video has this field: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;categories: [{
+            type: String,
+            enum: [
+                &#39;art&#39;,
+                &#39;sport&#39;,
+                &#39;news&#39;,
+                &#39;calture&#39;,
+                ...
+            ],
+        }],
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So I need a Video query that has the following conditions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Query to all videos and sort by values in &lt;strong&gt;req.user.interestedIn&lt;/strong&gt; first.&lt;/li&gt;
+&lt;li&gt;Rest of the videos that are not match to &lt;strong&gt;req.user.interestedIn&lt;/strong&gt; get in the last.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I got this far with said query:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Video.aggregate([
+
+        { &#39;$match&#39;: {}},
+        { &#39;$unwind&#39;: &#39;$categories&#39; },
+        { &#39;$match&#39;: {categories: {$in: req.user.interestedIn}}},
+        { &#39;$group&#39;: {
+            &#39;_id&#39;: &#39;$categories&#39;,
+            &#39;categories&#39;: { &#39;$push&#39;: &#39;$categories&#39; }
+        }},
+        { &#39;$sort&#39;: { &#39;categories&#39;: 1 } }
+    ])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is the result:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;   &quot;videos&quot;: [
+        {
+            &quot;_id&quot;: &quot;art&quot;,
+            &quot;categories&quot;: [
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;
+            ]
+        },
+        {
+            &quot;_id&quot;: &quot;news&quot;,
+            &quot;categories&quot;: [
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+   &quot;videos&quot;: [
+        {
+            &quot;_id&quot;: &quot;art&quot;,
+            &quot;categories&quot;: [
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;,
+                &quot;art&quot;
+            ]
+        },
+        {
+            &quot;_id&quot;: &quot;news&quot;,
+            &quot;categories&quot;: [
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;,
+                &quot;news&quot;
+            ]
+        }
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834503</id>
+        <re:rank scheme="https://stackoverflow.com">-4</re:rank>
+        <title type="text">Wrong output in a java program</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+        <author>
+            <name>Pavittar Punit Singh Madan</name>
+            <uri>https://stackoverflow.com/users/10310910</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834503/wrong-output-in-a-java-program" />
+        <published>2018-10-16T11:31:18Z</published>
+        <updated>2018-10-16T11:50:47Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Here is my program&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Crypto {
+    public static void main(String[] args) {
+       String x = null;
+        normalizetext(&quot;This is some \&quot;really\&quot; great. (Text)!?&quot;);
+        String y=normalizetext(x);
+        System.out.println(y);
+    }
+
+    public static String normalizetext(String x) {
+        x.replace(&quot; &quot;,&quot;&quot;);
+        x.replace(&quot;.&quot;,&quot;&quot;);
+        x.replace(&quot;,&quot;,&quot;&quot;);
+        x.replace(&quot;:&quot;,&quot;&quot;);
+        x.replace(&quot;;&quot;,&quot;&quot;);
+        x.replace(&quot;\&quot;&quot;,&quot;&quot;);
+        x.replace(&quot;&#39;&quot;,&quot;&quot;);
+        x.replace(&quot;!&quot;,&quot;&quot;);
+        x.replace(&quot;?&quot;,&quot;&quot;);
+        x.replace(&quot;(&quot;,&quot;&quot;);
+        x.replace(&quot;)&quot;,&quot;&quot;);
+        return x;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The output is null and I expected it to print the new value of x after replacing.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834437</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">Angular child component initialization problem</title>
+            <category scheme="https://stackoverflow.com/tags" term="angular" />
+            <category scheme="https://stackoverflow.com/tags" term="typescript" />
+            <category scheme="https://stackoverflow.com/tags" term="user-interface" />
+            <category scheme="https://stackoverflow.com/tags" term="viewchild" />
+        <author>
+            <name>user1797060</name>
+            <uri>https://stackoverflow.com/users/1797060</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834437/angular-child-component-initialization-problem" />
+        <published>2018-10-16T11:27:47Z</published>
+        <updated>2018-10-16T11:49:58Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am a beginner in Angular and I got the following problem when I try to initialize a child select component: I want to display a list based on the selected element (even of the page load) and the setter method is called infinitely over and over again. If I remove the subscribe everything is fine, but I need it so the list will be filled correctly on page load. Can you help me to figure out what I am doing wrong or how to do this in another way? &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@ViewChild(ChildComponent) set childComponent(value: ChildComponent) {
+if (value !== undefined) {
+  this._childComponent= value;
+  this.service.getList(this._childComponent.selectedElement).subscribe(result =&amp;gt; {
+    this.list= result;
+  });
+}}
+
+refresh(): void {
+this.service.getList(this._childComponent.selectedElement).subscribe(result =&amp;gt; {
+  this.list= result;
+});}
+
+&amp;lt;childComponent*ngIf=&quot;selectedElement!== null&quot; (change)=&quot;refresh()&quot;&amp;gt;&amp;lt;/childComponent&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52834126</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">C - Microcontroller NewLibNano - strftime - Stack Corruption</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="newlib" />
+        <author>
+            <name>aphardt</name>
+            <uri>https://stackoverflow.com/users/8091812</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52834126/c-microcontroller-newlibnano-strftime-stack-corruption" />
+        <published>2018-10-16T11:11:09Z</published>
+        <updated>2018-10-16T11:49:54Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I run an Atollic MCU Project for a Silicon Labs x32 Chip.
+There i use the reduced c-lib (newlib-nano).&lt;/p&gt;
+
+&lt;p&gt;I had random memory corruption due to an unknown party. Therefore u used watchpoints (breakpoint when the selected ram region is written), to see who writes into the ram region, which clearly does not belong to the &quot;writing&quot;-party. &lt;/p&gt;
+
+&lt;p&gt;The watchpoint hits as soon as i call &quot;strftime&quot;. This function call does clearly write into other RAM regions. This either due to my code (some false parameter or handling??) or due to the function itself.&lt;/p&gt;
+
+&lt;p&gt;I am not able to identify, why this function call writes to a false region.
+Is someone here seeing an issue with my code? Or is the actual implementation of the newlib still not bugfree?&lt;/p&gt;
+
+&lt;p&gt;Thanks&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;char * calendar::print_datetime(
+    char * buffer,
+    uint16_t size,
+    uint64_t timestamp_ms,
+    char * formatString)
+{
+  static char timestring_unix[50];
+  static char timestring_ms[20];
+
+  time_t current_time = static_cast&amp;lt;time_t&amp;gt;(timestamp_ms / 1000);
+  struct tm * time_info;
+
+  assert(buffer);
+  assert(size);
+
+  // make sure the input puffer is empty at first
+  (void) memset(buffer,          0, size                   );
+  (void) memset(timestring_unix, 0, sizeof(timestring_unix));
+  (void) memset(timestring_ms,   0, sizeof(timestring_ms)  );
+
+  // generate time information
+  time_info = localtime(&amp;amp;current_time);
+
+  // print date time into local string
+  if(formatString)
+  {
+#waring &quot;STACK CORRUPTION: WRITES TO OTHER RAM REGIONS..&quot;
+    assert( strftime( timestring_unix, sizeof(timestring_unix), formatString, time_info) &amp;lt;= sizeof(timestring_unix) );
+  }
+  else
+  {
+#waring &quot;STACK CORRUPTION: WRITES TO OTHER RAM REGIONS..&quot;
+    assert( strftime(timestring_unix, sizeof(timestring_unix), &quot;%C%y/%m/%d : %H:%M:%S&quot;, time_info) &amp;lt;= sizeof(timestring_unix) );
+  }
+
+  // append ms + time zone
+  assert( snprintf(
+      timestring_ms,
+      sizeof(timestring_ms),
+      &quot;.%03u (UTC+0)&quot;,
+      (uint16_t)(timestamp_ms % 1000)) &amp;lt;= (int)sizeof(timestring_ms) );
+
+  // copy local string to input buffer
+  assert(strlen(timestring_unix) &amp;lt;= size);
+  (void) strncpy(buffer, timestring_unix, size);
+
+  size_t sz = size - strnlen(buffer, size);
+  assert(strlen(timestring_ms) &amp;lt;= sz);
+  (void) strncat( buffer, timestring_ms, sz );
+
+  return buffer;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52833358</id>
+        <re:rank scheme="https://stackoverflow.com">-3</re:rank>
+        <title type="text">Parse method not handling formatting correctly</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="oop" />
+            <category scheme="https://stackoverflow.com/tags" term="datetime" />
+        <author>
+            <name>Sola</name>
+            <uri>https://stackoverflow.com/users/10507341</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52833358/parse-method-not-handling-formatting-correctly" />
+        <published>2018-10-16T10:27:28Z</published>
+        <updated>2018-10-16T11:50:39Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Parse method not handling formatting correctly.    &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import java.time.Period;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+import java.io.*;
+import java.time.*;
+
+//Main class
+public class TimeBetween{
+public static void main(String[] args){
+    String dateFormat = &quot;MMMM d, yyyy&quot;;
+    LocalDate aDate = null;
+    boolean validStr = false;
+
+ //parse method not handling formatting correctly.
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern(dateFormat);
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    while(validStr==false){
+        System.out.print(&quot;Enter a date: &quot;);
+//Try and catch 
+        try {
+            String dateEntered = br.readLine();
+            aDate = LocalDate.parse(dateEntered,formatter);
+            validStr = true;
+        }catch(IOException | DateTimeParseException ex){
+            validStr = false;
+        }
+
+    }
+
+    System.out.println(&quot;Date entered was: &quot;+aDate);
+    LocalDate now = LocalDate.now(); 
+
+    Period between;
+    if(aDate.isBefore(now)){
+        between = Period.between(aDate,now);
+    }else{
+        between = Period.between(now,aDate);
+    }
+
+    int years = between.getYears();
+    int months = between.getMonths();
+    int days =  between.getDays();
+
+//Printing out year month and day differences
+    System.out.println(&quot;There are&quot;    +years+&quot;years&quot;+months+&quot;months&quot;+days+&quot;days&quot;);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52833146</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Bootstrap 4 collapsed button not clickable</title>
+            <category scheme="https://stackoverflow.com/tags" term="html" />
+            <category scheme="https://stackoverflow.com/tags" term="css" />
+            <category scheme="https://stackoverflow.com/tags" term="twitter-bootstrap" />
+        <author>
+            <name>Anj</name>
+            <uri>https://stackoverflow.com/users/10512249</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52833146/bootstrap-4-collapsed-button-not-clickable" />
+        <published>2018-10-16T10:14:36Z</published>
+        <updated>2018-10-16T11:50:30Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m working on a website. I planned to have a collapsed menu but the collapsed button seems to be not working.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/style.css&quot;/&amp;gt;
+ &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/bootstrap.css&quot;/&amp;gt;
+ &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/bootstrap-grid.css&quot;/&amp;gt;
+ &amp;lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/bootstrap-reboot.css&quot;/&amp;gt;
+
+&amp;lt;/head&amp;gt;
+
+&amp;lt;body&amp;gt;
+
+&amp;lt;div class=&quot;pos-f-t&quot;&amp;gt;
+&amp;lt;div class=&quot;collapse&quot; id=&quot;navbarToggleExternalContent&quot;&amp;gt;
+&amp;lt;div class=&quot;bg-dark p-4&quot;&amp;gt;
+  &amp;lt;h4 class=&quot;text-white&quot;&amp;gt;Title here.&amp;lt;/h4&amp;gt;
+  &amp;lt;span class=&quot;text-muted&quot;&amp;gt;Text here.&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;nav class=&quot;navbar navbar-dark bg-dark&quot;&amp;gt;
+&amp;lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarToggleExternalContent&quot; aria-controls=&quot;navbarToggleExternalContent&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&amp;gt;
+  &amp;lt;span class=&quot;navbar-toggler-icon&quot;&amp;gt;&amp;lt;/span&amp;gt;
+ &amp;lt;/button&amp;gt;
+ &amp;lt;/nav&amp;gt;
+ &amp;lt;/div&amp;gt;
+
+
+
+ &amp;lt;!-- SCRIPT --&amp;gt;
+ &amp;lt;script  src=&quot;js/bootstrap.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+ &amp;lt;script  src=&quot;js/bootstrap.bundle.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+ &amp;lt;script  src=&quot;js/jquery-1.11.2.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+ &amp;lt;!-- END OF SCRIPT --&amp;gt;
+ &amp;lt;/body&amp;gt;
+
+
+ &amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I copied this from the bootstrap site itself and moment I pasted it on my dreamweaver and loaded it, the bar was there as well as the collapsed button. &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52830382</id>
+        <re:rank scheme="https://stackoverflow.com">-1</re:rank>
+        <title type="text">Converting String Javascript</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+        <author>
+            <name>Vishesh</name>
+            <uri>https://stackoverflow.com/users/9298816</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52830382/converting-string-javascript" />
+        <published>2018-10-16T07:46:37Z</published>
+        <updated>2018-10-16T11:49:42Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have a String i.e. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;&quot;DateAdd(&#39;y&#39;, 1, [CreatedOnDate])&quot;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;And I want to replace y as year and DateAdd as DATEADD&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;&quot;DATEADD(&#39;year&#39;,&#160;1,&#160;[CreatedOnDate])&quot;&lt;/code&gt;&lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;I want the solution for this.&lt;/p&gt;
+
+&lt;p&gt;I have tried &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let formulaNameIndex = formula.formula.indexOf(&#39;(&#39;);
+let formulaName = formula.formula.substring(0, formulaNameIndex);
+let yearIndex = formulaNameIndex + 1;
+let yearName = formula.formula.substring(yearIndex, yearIndex+1);
+if (yearName === &#39;y&#39;) {
+  yearName = &#39;year&#39;;
+}
+
+switch (formulaName) {
+    case &#39;DateAdd&#39;:
+      let newFormula = &#39;DATEADD(&#39; + yearName ...
+      break;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I got this as a temporary solution but I got 50 more String Manipulation So I can not do this for all 50 different String.
+So I need a solution how to do this better than this.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52829938</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">NOT IN Condition Returning Unexpected Results</title>
+            <category scheme="https://stackoverflow.com/tags" term="sql" />
+            <category scheme="https://stackoverflow.com/tags" term="sql-server" />
+        <author>
+            <name>GMR</name>
+            <uri>https://stackoverflow.com/users/7484312</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52829938/not-in-condition-returning-unexpected-results" />
+        <published>2018-10-16T07:19:52Z</published>
+        <updated>2018-10-16T11:50:27Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;We are trying to create a report to identify active patients who don’t have any future appointments on the schedule. An active patient would be someone that had an appointment within the last year. My thought was to create a temp table with all patients that have been seen within the last year and then use the NOT IN condition to exclude them from my next query.  It is not producing the desired result.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT Patient_ID
+  INTO #TempTableG
+  FROM Appointments
+  WHERE Appointment_DateTime &amp;gt; DATEADD(year,-1,GETDATE())
+  AND Status = &#39;X&#39; OR Status = &#39;N&#39;
+  GROUP BY Patient_ID
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This query shows (55741 row(s) affected)&lt;/p&gt;
+
+&lt;p&gt;However, when I take the id&#39;s inserted into that table and include them in the NOT IN condition I get zero results. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT Appt.Patient_ID, Pat.Patient_Number
+  FROM Appointments AS Appt
+  JOIN Patients AS Pat ON Appt.Patient_ID = Pat.Patient_ID
+  WHERE Appt.Appointment_DateTime !&amp;lt; GETDATE()
+    AND Appt.Patient_ID NOT IN (SELECT * FROM #TempTableG)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, when I change the NOT IN to an IN I get 30,356 rows returned. Shouldn&#39;t I be seeing 25,385 rows returned when using NOT IN?&lt;/p&gt;
+
+&lt;p&gt;Additionally, I wonder if I am taking the long way around the bus on this one. Is there an easier way to return these results?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52820912</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to build a Docker image with multiple dependencies for .NET Solution?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c#" />
+            <category scheme="https://stackoverflow.com/tags" term="docker" />
+            <category scheme="https://stackoverflow.com/tags" term="dockerfile" />
+            <category scheme="https://stackoverflow.com/tags" term="azure-iot-edge" />
+        <author>
+            <name>gneric</name>
+            <uri>https://stackoverflow.com/users/4990859</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52820912/how-to-build-a-docker-image-with-multiple-dependencies-for-net-solution" />
+        <published>2018-10-15T16:20:41Z</published>
+        <updated>2018-10-16T11:49:46Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;It could be kind of long, but I think it&#39;s easy to read... So let&#39;s begin ...&lt;/p&gt;
+
+&lt;p&gt;I have an IoT-Edge Solution created with &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=vsc-iot.vsiotedgetools&quot; rel=&quot;nofollow noreferrer&quot;&gt;IoT Edge Tools&lt;/a&gt;.
+It generates a Dockerfile which works nice for a project without external DLLs as dependencies.&lt;/p&gt;
+
+&lt;p&gt;The problem comes when I add multiple DLLs(&lt;code&gt;MySqlAdapter&lt;/code&gt;, &lt;code&gt;BaseAdapter&lt;/code&gt;, &lt;code&gt;Helper&lt;/code&gt;) in this module (&lt;code&gt;MyEdgeModule&lt;/code&gt;), without changing the Dockerfile when trying to build an image, &lt;/p&gt;
+
+&lt;p&gt;It throws an error:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Skipping project &quot;/MySqlAdapter/MySqlAdapter.csproj&quot; because it was not found.
+    Skipping project &quot;/MySqlAdapter/MySqlAdapter.csproj&quot; because it was not found.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;...&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;... : warning : The referenced project &#39;../MySqlAdapter/MySqlAdapter.csproj&#39; does not exist. [/app/MyEdgeModule.csproj]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;and here is the generated Dockerfile for the &lt;code&gt;MyEdgeModule&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;FROM microsoft/dotnet:2.1-sdk AS build-env
+WORKDIR /app
+
+COPY *.csproj ./
+RUN dotnet restore
+
+COPY *.csproj ./
+RUN dotnet restore
+
+COPY . ./
+RUN dotnet publish -c Release -o out
+
+FROM microsoft/dotnet:2.1-runtime-stretch-slim
+WORKDIR /app
+COPY --from=build-env /app/out ./
+
+RUN useradd -ms /bin/bash moduleuser
+USER moduleuser
+
+ENTRYPOINT [&quot;dotnet&quot;, &quot;MyEdgeModule.dll&quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These class library projects are located at &quot;../{projname}/*.csproj&quot; from the Dockerfile.&lt;/p&gt;
+
+&lt;p&gt;So I tried to relatively add these projects individually to the Dockerfile just to see if&#39;s gonna work but with no success.&lt;/p&gt;
+
+&lt;p&gt;I even got on this from the &lt;a href=&quot;https://docs.docker.com/engine/reference/builder/#copy&quot; rel=&quot;nofollow noreferrer&quot;&gt;documentation&lt;/a&gt; that it&#39;s said:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The  path must be inside the context of the build; you cannot COPY ../something /something, because the first step of a docker build is to send the context directory (and subdirectories) to the docker daemon.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As far as I understand my &lt;code&gt;context&lt;/code&gt; is the folder from which I try to go back, to find my Dependency Projects which seems impossible.&lt;/p&gt;
+
+&lt;p&gt;How can I create an image for this project, assuming that it has dozens of external DLLs as dependencies ? &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52818454</id>
+        <re:rank scheme="https://stackoverflow.com">-3</re:rank>
+        <title type="text">How to calculate time varying historical mean [on hold]</title>
+            <category scheme="https://stackoverflow.com/tags" term="window" />
+            <category scheme="https://stackoverflow.com/tags" term="stata" />
+            <category scheme="https://stackoverflow.com/tags" term="mean" />
+            <category scheme="https://stackoverflow.com/tags" term="rolling" />
+        <author>
+            <name>Macrina </name>
+            <uri>https://stackoverflow.com/users/9516556</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52818454/how-to-calculate-time-varying-historical-mean" />
+        <published>2018-10-15T13:59:56Z</published>
+        <updated>2018-10-16T11:50:06Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I need to reproduce a result but I did not understand what &quot;time varying historical mean&quot; is and how to calculate it using Stata.&lt;/p&gt;
+
+&lt;p&gt;Here is a numeric example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;clear 
+
+input X
+50.735469
+48.278413
+42.807671
+49.247854
+52.20223
+49.726689
+50.823169
+49.099351
+48.949562
+47.410434
+46.654168
+44.924652
+43.807024
+45.679814
+48.366395
+49.883396
+48.230502
+49.869179
+53.942757
+56.167884
+56.226512
+56.25608
+58.765728
+62.077038
+62.780799
+61.858235
+61.167646
+60.671859
+60.480263
+60.226433
+61.65349
+60.769882
+61.497553
+60.146182
+60.292934
+60.173739
+58.60077
+58.445601
+60.404868
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;How can I calculate the mean of &lt;code&gt;X&lt;/code&gt; using an expanding window with at least four observations?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52782426</id>
+        <re:rank scheme="https://stackoverflow.com">-1</re:rank>
+        <title type="text">.mat files do not open in script [on hold]</title>
+            <category scheme="https://stackoverflow.com/tags" term="matlab" />
+            <category scheme="https://stackoverflow.com/tags" term="file-io" />
+        <author>
+            <name>Sophie </name>
+            <uri>https://stackoverflow.com/users/8267452</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52782426/mat-files-do-not-open-in-script" />
+        <published>2018-10-12T15:11:22Z</published>
+        <updated>2018-10-16T11:50:05Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am running a script involving opening spikes.mat files which I have run successfully many times before,but for some reason it is stopping at different files each time and saying it is unable to load them. However, when I open the file in question, it produces no error.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/z1R1h.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/z1R1h.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52482426</id>
+        <re:rank scheme="https://stackoverflow.com">5</re:rank>
+        <title type="text">Problem when trying to reuse external terms using MIREOT Prot&#233;g&#233; Plugin</title>
+            <category scheme="https://stackoverflow.com/tags" term="rdf" />
+            <category scheme="https://stackoverflow.com/tags" term="owl" />
+            <category scheme="https://stackoverflow.com/tags" term="ontology" />
+            <category scheme="https://stackoverflow.com/tags" term="protege" />
+            <category scheme="https://stackoverflow.com/tags" term="linked-data" />
+        <author>
+            <name>Zakariae Aloulen</name>
+            <uri>https://stackoverflow.com/users/3733861</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52482426/problem-when-trying-to-reuse-external-terms-using-mireot-prot%c3%a9g%c3%a9-plugin" />
+        <published>2018-09-24T15:14:28Z</published>
+        <updated>2018-10-16T11:49:54Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have tried to reference external vocabulary using MIREOT Prot&#233;g&#233; Plugin.
+The external ontology is located in this link : &lt;a href=&quot;http://purl.allotrope.org/voc/afo/REC/2018/07/afo&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://purl.allotrope.org/voc/afo/REC/2018/07/afo&lt;/a&gt; (TTL File : &lt;a href=&quot;http://purl.allotrope.org/voc/afo/REC/2018/07/afo.ttl&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://purl.allotrope.org/voc/afo/REC/2018/07/afo.ttl&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;The problem is that the plugin cannot get any results from this ontology when I try to look for a term. The MIREOT Plugin return only superclasses (BFO terms in this case) See screen 1 &lt;a href=&quot;https://i.stack.imgur.com/9D45Y.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;Screen 1&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When I tried to look for the term &quot;sample processing&quot; (which is a specialized class), I didn&#39;t get any results while the term exist in the ontology (see screen 2). &lt;a href=&quot;https://i.stack.imgur.com/g9rJr.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;Screen 2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Thank you for help.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/15740986</id>
+        <re:rank scheme="https://stackoverflow.com">4</re:rank>
+        <title type="text">jquery - Why do we write .attr(&#39;selected&#39;,&#39;selected&#39;) with select tag</title>
+            <category scheme="https://stackoverflow.com/tags" term="jquery" />
+            <category scheme="https://stackoverflow.com/tags" term="select" />
+            <category scheme="https://stackoverflow.com/tags" term="attr" />
+            <category scheme="https://stackoverflow.com/tags" term="selected" />
+        <author>
+            <name>Tejas C</name>
+            <uri>https://stackoverflow.com/users/2118144</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/15740986/jquery-why-do-we-write-attrselected-selected-with-select-tag" />
+        <published>2013-04-01T09:36:08Z</published>
+        <updated>2018-10-16T11:50:09Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;why do we write &lt;code&gt;.attr(&#39;selected&#39;,&#39;selected&#39;)&lt;/code&gt; with select tag&lt;/p&gt;
+
+&lt;p&gt;For ex:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&#39;#countryList option&#39;).filter(function () {
+ return ($(this).text() == findText); }).attr(&#39;selected&#39;,&#39;selected&#39;);
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What does it really means?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/11892740</id>
+        <re:rank scheme="https://stackoverflow.com">2</re:rank>
+        <title type="text">How do I execute multiple processes simultaneously in Java?</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+        <author>
+            <name>Arvind</name>
+            <uri>https://stackoverflow.com/users/2606598</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/11892740/how-do-i-execute-multiple-processes-simultaneously-in-java" />
+        <published>2012-08-09T22:13:05Z</published>
+        <updated>2018-10-16T11:49:54Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am working on an application in which I want multiple tasks to be executed simultaneously.&lt;/p&gt;
+
+&lt;p&gt;I also want to be able to keep track of the number of such tasks being run in parallel, and sometimes add yet another task to be processed in parallel, in addition to the current set of tasks already being processed.&lt;/p&gt;
+
+&lt;p&gt;One more thing- I want to do the above, not only in a desktop app, but also in a cloud app, in which I initialise another virtual machine running Tomcat, and then repeat all of the above in that instance.&lt;/p&gt;
+
+&lt;p&gt;What is the best way to do this? If you can point me to the correct theory/guides on this subject, that would be great, although code samples are also welcome.&lt;/p&gt;
+
+        </summary>
+    </entry>
+</feed>

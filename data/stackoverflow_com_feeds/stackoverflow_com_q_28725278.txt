@@ -1,0 +1,1 @@
+I was going through Hadoop tutorials, i got below doubt regarding Block pool in hadoop. Block pool- Basically each block pools are managed independently from one another, each one is a set of blocks that belong to a single namespace. Is that block pool is virtual concept or is it something like metadat on blocks which is maintained in memory ? 

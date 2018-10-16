@@ -1,0 +1,1 @@
+ Is there a reason why the references count (code lens) is missing in Visual Studio Community edition?  Is is possible to enable it in the options?  Here is a screenshot of Visual Studio 2015 and 2017 Community edition:  Here is a screenshot of Visual Studio 2013:  source: dailydotnettips.com

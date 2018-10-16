@@ -1,0 +1,1 @@
+I am using git-cmd.exe as my terminal program in Windows 7. How can I configure this to show the current branch in my prompt?
