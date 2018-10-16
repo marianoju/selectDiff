@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">Recent Questions - Stack Overflow</title>
+    <link rel="self" href="https://stackoverflow.com/feeds/" type="application/atom+xml" />
+    <link rel="alternate" href="https://stackoverflow.com/questions" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2018-10-15T10:00:08Z</updated>
+    <id>https://stackoverflow.com/feeds/</id>
+    <creativeCommons:license>http://www.creativecommons.org/licenses/by-sa/3.0/rdf</creativeCommons:license> 
+    <entry>
+        <id>https://stackoverflow.com/q/52814190</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to get the URI of a file stored in a folder created with context.getDir(directoryName, Context.MODE_PRIVATE)?</title>
+            <category scheme="https://stackoverflow.com/tags" term="android" />
+            <category scheme="https://stackoverflow.com/tags" term="uri" />
+            <category scheme="https://stackoverflow.com/tags" term="android-fileprovider" />
+        <author>
+            <name>blade</name>
+            <uri>https://stackoverflow.com/users/3753336</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52814190/how-to-get-the-uri-of-a-file-stored-in-a-folder-created-with-context-getdirdire" />
+        <published>2018-10-15T10:00:03Z</published>
+        <updated>2018-10-15T10:00:03Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Let&#39;s say I create a file inside the private folder like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;val dir = context.getDir(&quot;myDir&quot;, Context.MODE_PRIVATE)
+val file = File(dir, &quot;myFileName&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What should be the content of provider_path.xml?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;paths xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&amp;gt;
+&amp;lt;!--for file created inside context.getFilesDir() directory--&amp;gt;
+&amp;lt;files-path name=&quot;someDirectory&quot; path=&quot;.&quot;/&amp;gt; 
+
+&amp;lt;!--for files created inside &quot;myDir&quot; ???--&amp;gt;
+&amp;lt;/paths&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I know how to get the URI for a file created inside context.getFilesDir(),  but it is possible to get the URI of a file created inside another private directory?&lt;/p&gt;
+
+&lt;p&gt;Thanks in advance!&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52814188</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to access function of a parent controller inside the child directive</title>
+            <category scheme="https://stackoverflow.com/tags" term="angularjs" />
+        <author>
+            <name>Seeta Ram Yadav</name>
+            <uri>https://stackoverflow.com/users/5279059</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52814188/how-to-access-function-of-a-parent-controller-inside-the-child-directive" />
+        <published>2018-10-15T09:59:49Z</published>
+        <updated>2018-10-15T09:59:49Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;How can I call a function from parent controller inside the child directive?&lt;/p&gt;
+
+&lt;p&gt;my controller looks something like this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;angular.module(&#39;myVillage&#39;)
+  .controller(&#39;myVillageController&#39;, myVillageController);
+
+function myVillageController($scope, $q, $element, $timeout) {
+  function moveHome() {
+    console.log(&quot;moved home&quot;)
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;my directive looks something like this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;angular
+  .module(&#39;myVillage&#39;)
+  .directive(&#39;myVillagModal&#39;, myVillagModal);
+
+var vm = this,
+
+  cachedKeys = {},
+  limitInit = 500;
+function myVillagModal(myVillage, $filter) {
+  return {
+    restrict: &#39;E&#39;,
+    templateUrl: myVillagelTemplateUrl,
+    bindToController: true,
+    scope: {
+      items: &#39;=&#39;,
+      selectedItems:&#39;=&#39;,
+      selectedItemsChanged: &#39;&amp;amp;&#39;
+    },
+    transclude: true,
+    controller: myVillageController,
+    controllerAs: &#39;vm&#39;
+  };
+
+  function myVillageController() {
+    //....
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I want to call the moveHOme function inside the move-village directive.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div ng-controller=&quot;myVillageController&quot;&amp;gt;
+  &amp;lt;move-village&amp;gt;&amp;lt;/move-village&amp;gt;
+  &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52814185</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to find out if mobile has a notch or not.</title>
+            <category scheme="https://stackoverflow.com/tags" term="android" />
+            <category scheme="https://stackoverflow.com/tags" term="xml" />
+            <category scheme="https://stackoverflow.com/tags" term="screen" />
+            <category scheme="https://stackoverflow.com/tags" term="android-toolbar" />
+            <category scheme="https://stackoverflow.com/tags" term="android-8.0-oreo" />
+        <author>
+            <name>Varun Kulkarni</name>
+            <uri>https://stackoverflow.com/users/8194166</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52814185/how-to-find-out-if-mobile-has-a-notch-or-not" />
+        <published>2018-10-15T09:59:40Z</published>
+        <updated>2018-10-15T09:59:40Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I need to modify the app&#39;s toolbar if the notch is present. Right now that notch hides bit of content in toolbar. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; if (Build.VERSION.SDK_INT == Build.VERSION_CODES.LOLLIPOP || Build.VERSION.SDK_INT == Build.VERSION_CODES.M) {
+        setTheme(R.style.AppTheme_NoActionBarHello);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        SystemBarTintManager tintManager = new SystemBarTintManager(this);
+        tintManager.setStatusBarTintEnabled(true);
+        tintManager.setTintColor(ContextCompat.getColor(this, R.color.white));
+    } else initStatusBar();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;initStatusBar method&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; Window window = getWindow();
+
+    if (Build.VERSION.SDK_INT &amp;gt;= Build.VERSION_CODES.KITKAT &amp;amp;&amp;amp; Build.VERSION.SDK_INT &amp;lt; Build.VERSION_CODES.LOLLIPOP) {
+        window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        SystemBarTintManager tintManager = new SystemBarTintManager(this);
+        tintManager.setStatusBarTintEnabled(true);
+        tintManager.setTintColor(ContextCompat.getColor(this, R.color.white));
+    }
+    if (Build.VERSION.SDK_INT &amp;gt;= Build.VERSION_CODES.KITKAT) {
+        Window w = getWindow(); // in Activity&#39;s onCreate() for instance
+        w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Am not having any notification bar in my app. The toolbar itself covers all that area as in white to achieve that am using above code to keep it compatible. 
+But notch is giving some problem as its new. &lt;/p&gt;
+
+&lt;p&gt;The problem is right now for Motorola One Power. &lt;/p&gt;
+
+&lt;p&gt;Help appreciated. Let me know if you need anything extra. 
+Thanks&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52814183</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">css bordered navigation bar with React</title>
+            <category scheme="https://stackoverflow.com/tags" term="html" />
+            <category scheme="https://stackoverflow.com/tags" term="css" />
+            <category scheme="https://stackoverflow.com/tags" term="reactjs" />
+            <category scheme="https://stackoverflow.com/tags" term="navbar" />
+        <author>
+            <name>user2814139</name>
+            <uri>https://stackoverflow.com/users/2814139</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52814183/css-bordered-navigation-bar-with-react" />
+        <published>2018-10-15T09:59:39Z</published>
+        <updated>2018-10-15T09:59:39Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am a backend dev doing front end now, anyways i am in need to create a bordered nav bar that looks as the following.&lt;/p&gt;
+
+&lt;p&gt;i tried to get this but never got the needed result.
+could you please point me out ?
+thank you&lt;a href=&quot;https://i.stack.imgur.com/8BIb9.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;neededNavBarDesign&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52814179</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">OpenApi 3 Multiple Base URL</title>
+            <category scheme="https://stackoverflow.com/tags" term="swagger" />
+            <category scheme="https://stackoverflow.com/tags" term="swagger-ui" />
+            <category scheme="https://stackoverflow.com/tags" term="openapi" />
+        <author>
+            <name>waletoye</name>
+            <uri>https://stackoverflow.com/users/2634155</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52814179/openapi-3-multiple-base-url" />
+        <published>2018-10-15T09:59:26Z</published>
+        <updated>2018-10-15T09:59:26Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;We want to use OpenAPI (v3 or v2) to document technologies and not a single product. As such the documentation should have endpoints that point to different servers:&lt;/p&gt;
+
+&lt;p&gt;e.g&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;(Request Samples)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://192.168.73.56/api/deposit/makedeposit&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://192.168.73.56/api/deposit/makedeposit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://192.168.41.88/api/investment/createnew&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://192.168.41.88/api/investment/createnew&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Is this possible?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52814177</id>
+        <re:rank scheme="https://stackoverflow.com">-1</re:rank>
+        <title type="text">Extract only years from strings in different formats in javascript</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="regex" />
+        <author>
+            <name>Forrest</name>
+            <uri>https://stackoverflow.com/users/5062247</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52814177/extract-only-years-from-strings-in-different-formats-in-javascript" />
+        <published>2018-10-15T09:59:25Z</published>
+        <updated>2018-10-15T09:59:25Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have data from a public API and I need to extract years from a column in that dataset.&lt;/p&gt;
+
+&lt;p&gt;The text from that column has different formats, so let&#39;s say it&#39;s an array like this: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var array = [&#39;ca 1940&#39;, &#39;4 October 1935&#39;, &#39;1915&#39;, &#39;Undated&#39;, &#39;ca 1921&#39;, &#39;5 September 1925&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;How can I filter this array to have an array like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var years = magical_method(array); 
+// years = [&#39;1940&#39;, &#39;1935&#39;, &#39;1915&#39;, &#39;1921&#39;, &#39;1925&#39;]
+// Remove strings which do not have years and extract years from strings which do have years
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Any help will be appreciated.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52814175</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Can I get stats of any youtube channel or video</title>
+            <category scheme="https://stackoverflow.com/tags" term="youtube-api" />
+        <author>
+            <name>Tung Vu Duc</name>
+            <uri>https://stackoverflow.com/users/7561768</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52814175/can-i-get-stats-of-any-youtube-channel-or-video" />
+        <published>2018-10-15T09:59:22Z</published>
+        <updated>2018-10-15T09:59:22Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Can I get stats of any video or youtube channel, I&#39;d read document about youtube analytics api and they says &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;All YouTube Analytics and YouTube Reporting API requests must be
+  authorized by the channel or content owner that owns the requested
+  data.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;if it&#39;s true, how &lt;code&gt;socialblade&lt;/code&gt; can get all information like subs history, video views history, real-time subs count.... of any channel even my channel.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52814173</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Issue on Pull request in Github</title>
+            <category scheme="https://stackoverflow.com/tags" term="git" />
+            <category scheme="https://stackoverflow.com/tags" term="github" />
+            <category scheme="https://stackoverflow.com/tags" term="merge" />
+            <category scheme="https://stackoverflow.com/tags" term="pull-request" />
+        <author>
+            <name>Swaroop</name>
+            <uri>https://stackoverflow.com/users/10117509</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52814173/issue-on-pull-request-in-github" />
+        <published>2018-10-15T09:59:16Z</published>
+        <updated>2018-10-15T09:59:16Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;We have 2 pull requests.
+Pull request1 has 3 files.
+Pull request2 had 20 files and dependency on pull request 1 on 1 file.&lt;/p&gt;
+
+&lt;p&gt;Now we merged the pull request 1 to master. And then merged the pull request 2. When we merge pull request 2 the code which has updated in pull request 1 on dependency file got appended twice when we merge pull request 2. Our scripts are getting failed because of this.&lt;/p&gt;
+
+&lt;p&gt;What could be the reason for appending twice when we have dependency pull request?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52814142</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Automatically reload classes while debugging</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="debugging" />
+            <category scheme="https://stackoverflow.com/tags" term="intellij-idea" />
+        <author>
+            <name>Shubham Randive</name>
+            <uri>https://stackoverflow.com/users/8641326</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52814142/automatically-reload-classes-while-debugging" />
+        <published>2018-10-15T09:57:35Z</published>
+        <updated>2018-10-15T09:59:29Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am currently working on big spring boot project which takes around 1 minute to start. While debugging, if i make some changes in some class, I have to restart the whole application again.&lt;/p&gt;
+
+&lt;p&gt;Is there any way i could reload only those classes (and beans)  which have been updated while debugging Intellij so that i could quickly see those changes in running application? &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52814007</id>
+        <re:rank scheme="https://stackoverflow.com">-4</re:rank>
+        <title type="text">Cant get content from a span tag [on hold]</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="jquery" />
+            <category scheme="https://stackoverflow.com/tags" term="html" />
+        <author>
+            <name>Cristal</name>
+            <uri>https://stackoverflow.com/users/7139074</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52814007/cant-get-content-from-a-span-tag" />
+        <published>2018-10-15T09:50:05Z</published>
+        <updated>2018-10-15T09:59:36Z</updated>
+        <summary type="html">
+            
+
+            &lt;pre&gt;&lt;code&gt;&amp;lt;span id=&quot;last-call&quot;&amp;gt;30&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I have above span under  tag. I am trying get the text from the span.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&#39;#last-call&#39;).text();
+$(&#39;a #last-call&#39;).text()
+$(&#39;span #last-call&#39;).text()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I have tried above lines, but its not working. Any suggestion what I am missing?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52813950</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">Load MS Access table as DataFrame in Spark</title>
+            <category scheme="https://stackoverflow.com/tags" term="scala" />
+            <category scheme="https://stackoverflow.com/tags" term="apache-spark" />
+            <category scheme="https://stackoverflow.com/tags" term="ms-access" />
+            <category scheme="https://stackoverflow.com/tags" term="jdbc" />
+            <category scheme="https://stackoverflow.com/tags" term="apache-spark-sql" />
+        <author>
+            <name>kerrache massipssa</name>
+            <uri>https://stackoverflow.com/users/4941231</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52813950/load-ms-access-table-as-dataframe-in-spark" />
+        <published>2018-10-15T09:46:59Z</published>
+        <updated>2018-10-15T09:59:41Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m tryinnh to load table from MS Access database, I&#39;m doing it like that :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;val table = sparkSession.read
+    .format(&quot;jdbc&quot;)
+    .option(&quot;url&quot;, &quot;jdbc:ucanaccess://D:/User/test.mdf;memory=false&quot;)
+    .option(&quot;dbtable&quot;, &quot;my_table&quot;)
+    .load()
+    .toDF
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I added this dependencies&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ucanaccess-4.0.1, &lt;/li&gt;
+&lt;li&gt;hsqldb-2.4.1, &lt;/li&gt;
+&lt;li&gt;jackcess-2.1.6, &lt;/li&gt;
+&lt;li&gt;commons-lang3-3.8.1 &lt;/li&gt;
+&lt;li&gt;commons-logging-1.2.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I get this exception : &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Caused by: net.ucanaccess.jdbc.UcanaccessSQLException: UCAExc:::4.0.1 incompatible data type in conversion: from SQL type CHARACTER to java.lang.Integer, value: Maj_ID
+at net.ucanaccess.jdbc.UcanaccessResultSet.getInt(UcanaccessResultSet.java:447)
+at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$$anonfun$org$apache$spark$sql$execution$datasources$jdbc$JdbcUtils$$makeGetter$6.apply(JdbcUtils.scala:411)
+at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$$anonfun$org$apache$spark$sql$execution$datasources$jdbc$JdbcUtils$$makeGetter$6.apply(JdbcUtils.scala:410)
+at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$$anon$1.getNext(JdbcUtils.scala:347)
+at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$$anon$1.getNext(JdbcUtils.scala:329)
+at org.apache.spark.util.NextIterator.hasNext(NextIterator.scala:73)
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52813885</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Android Dont know how to fix this index out of bounds exception FirebaseRecyclerview</title>
+            <category scheme="https://stackoverflow.com/tags" term="java" />
+            <category scheme="https://stackoverflow.com/tags" term="android" />
+            <category scheme="https://stackoverflow.com/tags" term="firebase" />
+            <category scheme="https://stackoverflow.com/tags" term="arraylist" />
+            <category scheme="https://stackoverflow.com/tags" term="android-recyclerview" />
+        <author>
+            <name>anomynous</name>
+            <uri>https://stackoverflow.com/users/8096540</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52813885/android-dont-know-how-to-fix-this-index-out-of-bounds-exception-firebaserecycler" />
+        <published>2018-10-15T09:43:26Z</published>
+        <updated>2018-10-15T09:59:53Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I get this error and I dont know how to fix it &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+                    at java.util.ArrayList.get(ArrayList.java:411)
+                    at com.tijdelijk.firebasetest.Start$1.populateViewHolder(Start.java:69)
+                    at com.tijdelijk.firebasetest.Start$1.populateViewHolder(Start.java:64)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I am working with firebase database and based on CategoryId I put the items in a arraylist for the SubCategories my code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class CategoryFragment extends Fragment {
+
+View myFragment;
+
+RecyclerView listCategory;
+RecyclerView.LayoutManager layoutManager;
+FirebaseRecyclerAdapter&amp;lt;Category, CategoryViewHolder&amp;gt; adapter;
+
+FirebaseDatabase database;
+
+DatabaseReference categories;
+DatabaseReference subCategory;
+
+public static CategoryFragment newInstance() {
+    CategoryFragment fragment = new CategoryFragment();
+    return fragment;
+}
+
+@Override
+public void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+
+    database = FirebaseDatabase.getInstance();
+    categories = database.getReference(&quot;Category&quot;);
+    subCategory = database.getReference(&quot;SubCategory&quot;);
+
+}
+
+@Nullable
+@Override
+public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    myFragment = inflater.inflate(R.layout.fragment_category, container, false);
+
+    listCategory = (RecyclerView) myFragment.findViewById(R.id.listCategory);
+    listCategory.setHasFixedSize(true);
+    layoutManager = new LinearLayoutManager(container.getContext());
+    listCategory.setLayoutManager(layoutManager);
+
+    loadCategories();
+
+
+    return myFragment;
+}
+
+private void loadCategories() {
+    adapter = new FirebaseRecyclerAdapter&amp;lt;Category, CategoryViewHolder&amp;gt;(
+            Category.class,
+            R.layout.category_layout,
+            CategoryViewHolder.class,
+            categories
+    ) {
+
+
+        @Override
+        protected void populateViewHolder(CategoryViewHolder viewHolder, final Category model, int position) {
+            viewHolder.category_name.setText(model.getName());
+            Picasso.with(getActivity())
+                    .load(model.getImage())
+                    .into(viewHolder.category_image);
+
+            viewHolder.setItemClickListener(new ItemClickListener() {
+                @Override
+                public void onClick(View view, int position, boolean isLongClick) {
+                    Intent startGame = new Intent(getActivity(), Start.class);
+                    Common.categoryId = adapter.getRef(position).getKey();
+                    loadSubCategory(Common.categoryId);
+
+                    startActivity(startGame);
+                }
+            });
+        }
+    };
+    adapter.notifyDataSetChanged();
+    listCategory.setAdapter(adapter);
+}
+
+private void loadSubCategory(String categoryId) {
+
+    //Clear list if there are old subCategory
+    if (Common.subCategoryList.size() &amp;gt; 0) {
+        Common.subCategoryList.clear();
+    }
+
+    subCategory.orderByChild(&quot;CategoryId&quot;).equalTo(categoryId)
+            .addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                        SubCategory ques = postSnapshot.getValue(SubCategory.class);
+                        Common.subCategoryList.add(ques);
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;in this activity I want to display also a recyclerview but this time based on the arraylist I got from the categoryfragment here is my code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Start extends AppCompatActivity {
+
+
+FirebaseDatabase database;
+DatabaseReference subCategory;
+
+FirebaseRecyclerAdapter&amp;lt;SubCategory, SubCategoryViewHolder&amp;gt; adapter;
+RecyclerView listSubCategory;
+RecyclerView.LayoutManager layoutManager;
+
+
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_start);
+
+    database = FirebaseDatabase.getInstance();
+    subCategory = database.getReference(&quot;SubCategory&quot;);
+
+    listSubCategory = findViewById(R.id.listSubCategory);
+    listSubCategory.setHasFixedSize(true);
+    layoutManager = new LinearLayoutManager(getBaseContext());
+    listSubCategory.setLayoutManager(layoutManager);
+
+    loadSubCategories();
+    adapter.notifyDataSetChanged();
+    listSubCategory.setAdapter(adapter);
+}
+
+
+
+
+private void loadSubCategories() {
+    adapter = new FirebaseRecyclerAdapter&amp;lt;SubCategory, SubCategoryViewHolder&amp;gt;(
+            SubCategory.class,
+            R.layout.subcategory_layout,
+            SubCategoryViewHolder.class,
+            subCategory
+    ) {
+
+
+        @Override
+        protected void populateViewHolder(SubCategoryViewHolder viewHolder, SubCategory model, int position) {
+            viewHolder.subcategory_nlname.setText(Common.subCategoryList.get(position).getLatijnseNaam());
+            viewHolder.subcategory_ltname.setText(Common.subCategoryList.get(position).getNederlandseNaam());
+
+
+            viewHolder.setItemClickListener(new ItemClickListener() {
+                @Override
+                public void onClick(View view, int position, boolean isLongClick) {
+                    Intent startGame = new Intent(Start.this, Start.class);
+                    Common.categoryId = adapter.getRef(position).getKey();
+
+                    startActivity(startGame);
+                }
+            });
+        }
+
+
+        };
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;here is my viewholder:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class SubCategoryViewHolder extends RecyclerView.ViewHolder 
+implements View.OnClickListener{
+
+public TextView subcategory_nlname;
+public TextView subcategory_ltname;
+
+
+private ItemClickListener itemClickListener;
+
+
+
+ public SubCategoryViewHolder(View itemView) {
+        super(itemView);
+        subcategory_ltname = itemView.findViewById(R.id.latijnse_naam);
+        subcategory_nlname =  itemView.findViewById(R.id.nederlandse_naam);
+
+//        itemView.findViewById(R.id.btnPlay).setOnClickListener(this);
+    }
+
+    public void setItemClickListener(ItemClickListener itemClickListener) {
+        this.itemClickListener = itemClickListener;
+    }
+
+        @Override
+        public void onClick(View view) {
+            itemClickListener.onClick(view,getAdapterPosition(),false);
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52813555</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">License check for JavaScript or how to ask for server route</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="url" />
+            <category scheme="https://stackoverflow.com/tags" term="url-routing" />
+            <category scheme="https://stackoverflow.com/tags" term="licensing" />
+            <category scheme="https://stackoverflow.com/tags" term="login-control" />
+        <author>
+            <name>user3440145</name>
+            <uri>https://stackoverflow.com/users/3440145</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52813555/license-check-for-javascript-or-how-to-ask-for-server-route" />
+        <published>2018-10-15T09:26:11Z</published>
+        <updated>2018-10-15T09:59:53Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am trying to find a solution to deliver a javascript file only when the site including it is permitted to use it.&lt;/p&gt;
+
+&lt;p&gt;This is for having sort of a license check when using the script - the check should pass only for registered URL&#39;s.&lt;/p&gt;
+
+&lt;p&gt;I think what I need is to check the server URL on runtime within the script sending a request to the verification site which i provide including the server URL and then responding to the request either by allowing or permitting the script&#39;s usage.&lt;/p&gt;
+
+&lt;p&gt;I am having a hard time to figure out how to handle this. If it can be handled at all?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52813490</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Stick inputs to div</title>
+            <category scheme="https://stackoverflow.com/tags" term="html" />
+            <category scheme="https://stackoverflow.com/tags" term="css" />
+        <author>
+            <name>Leilang</name>
+            <uri>https://stackoverflow.com/users/10063378</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52813490/stick-inputs-to-div" />
+        <published>2018-10-15T09:22:05Z</published>
+        <updated>2018-10-15T09:59:58Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have a problem with sticking inputs to div. When I try to reduce the page, everything breaks down. Possibly, I also wonder if I do not develop the option radio and input after clicking on each page (right, left, top and bottom) separately. How can I achieve this? Each edge can have a different processing, so I need a radio and input on each side.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&quot;kwadratObrobka&quot; style=&quot; margin-top: 5%;     font-family: 
+    &#39;Fira Sans&#39;, sans-serif; font-         size:50%;;  text-align: center;&quot; 
+     id=&quot;kwadratObrobka&quot;     name=&quot;kwadratObrobka&quot; &amp;gt;&amp;lt;br/&amp;gt; 
+
+      &amp;lt;div class=&quot;gora&quot; id=&quot;gora&quot; name=&quot;gora&quot; &amp;gt;
+    &amp;lt;form action=&quot;&quot;&amp;gt;
+    &amp;lt;input type=&quot;radio&quot; name=&quot;gora&quot; value=&quot;zgrzew  &quot;&amp;gt; zgrzew&amp;lt;br&amp;gt;
+    &amp;lt;input type=&quot;radio&quot; name=&quot;gora&quot; value=&quot;tunel   &quot;&amp;gt; tunel&amp;lt;br&amp;gt;
+    &amp;lt;input type=&quot;radio&quot; name=&quot;gora&quot; value=&quot;szycie  &quot;&amp;gt; szycie&amp;lt;br&amp;gt;
+    &amp;lt;input type=&quot;radio&quot; name=&quot;gora&quot; value=&quot;dociecie&quot;&amp;gt; docięcie&amp;lt;br&amp;gt;
+    oczka co: &amp;lt;input style=&quot;display: inline-block; max-width:5%; min-width:5%; 
+    max-height:3%; margin-left: 1%;&quot; type=&quot;number&quot; name=&quot;goraoczka&quot; value=&quot;&quot;&amp;gt; 
+    &amp;lt;br&amp;gt;
+    tunel cm: &amp;lt;input style=&quot;display: inline-block; max-width:5%; min-width:5%; 
+    max-height:3%; margin-left: 1%;&quot; type=&quot;number&quot; name=&quot;goratunel&quot; value=&quot;&quot;&amp;gt; 
+    &amp;lt;br&amp;gt;
+
+    &amp;lt;/form&amp;gt;
+     &amp;lt;/div&amp;gt;
+
+      &amp;lt;div class=&quot;lewy&quot; id=&quot;lewy&quot; name=&quot;lewy&quot; style=&quot;float: left; margin-left: 
+    30%; margin-top: 4%;&quot;&amp;gt;
+    &amp;lt;form action=&quot;&quot;&amp;gt;
+     &amp;lt;input type=&quot;radio&quot; name=&quot;lewy&quot; value=&quot;zgrzew&quot;&amp;gt; zgrzew&amp;lt;br&amp;gt;
+   &amp;lt;input type=&quot;radio&quot; name=&quot;lewy&quot; value=&quot;tunel&quot;&amp;gt; tunel&amp;lt;br&amp;gt;
+   &amp;lt;input type=&quot;radio&quot; name=&quot;lewy&quot; value=&quot;szycie&quot;&amp;gt; szycie&amp;lt;br&amp;gt;
+   &amp;lt;input type=&quot;radio&quot; name=&quot;lewy&quot; value=&quot;dociecie&quot;&amp;gt; docięcie&amp;lt;br&amp;gt;
+   oczka co:&amp;lt;input style=&quot;display: inline-block; max-width:30%; min-width:30%; 
+   margin-left: 1%;&quot; type=&quot;number&quot; name=&quot;lewyoczka&quot; value=&quot;&quot;&amp;gt;&amp;lt;br&amp;gt;
+   tunel cm:&amp;lt;input style=&quot;display: inline-block; max-width:30%; min-width:30%; 
+   margin-left: 1%;&quot; type=&quot;number&quot; name=&quot;lewytunel&quot; value=&quot;&quot;&amp;gt;&amp;lt;br&amp;gt;
+
+   &amp;lt;/form&amp;gt;
+     &amp;lt;/div&amp;gt;
+
+     &amp;lt;div class=&quot;prawy&quot; id=&quot;prawy&quot; name=&quot;prawy&quot; style=&quot;float: right; margin- 
+    right: 30%; margin-top: 4%;&quot;&amp;gt;
+    &amp;lt;form action=&quot;&quot;&amp;gt;
+   &amp;lt;input type=&quot;radio&quot; name=&quot;prawy&quot; value=&quot;zgrzew&quot;&amp;gt; zgrzew&amp;lt;br&amp;gt;
+   &amp;lt;input type=&quot;radio&quot; name=&quot;prawy&quot; value=&quot;tunel&quot;&amp;gt; tunel&amp;lt;br&amp;gt;
+   &amp;lt;input type=&quot;radio&quot; name=&quot;prawy&quot; value=&quot;szycie&quot;&amp;gt; szycie&amp;lt;br&amp;gt;
+   &amp;lt;input type=&quot;radio&quot; name=&quot;prawy&quot; value=&quot;dociecie&quot;&amp;gt; docięcie&amp;lt;br&amp;gt;
+   oczka co:&amp;lt;input style=&quot;display: inline-block; max-width:30%; min-width:30%; 
+   margin-left: 1%;&quot; type=&quot;number&quot; name=&quot;lewyoczka&quot; value=&quot;&quot;&amp;gt;&amp;lt;br&amp;gt;
+   tunel cm:&amp;lt;input style=&quot;display: inline-block; max-width:30%; min-width:30%; 
+   margin-left: 1%;&quot; type=&quot;number&quot; name=&quot;lewytunel&quot; value=&quot;&quot;&amp;gt;&amp;lt;br&amp;gt;
+
+   &amp;lt;/form&amp;gt;
+     &amp;lt;/div&amp;gt;
+
+      &amp;lt;div class=&quot;kwadrat&quot; id=&quot;kwadrat&quot; name=&quot;kwadrat&quot; style=&quot;  margin- 
+    left:auto;
+    margin-right:auto;  background: url(&#39;https://&#39;) ;
+    background-size: 100%;
+    margin-bottom: -30px; 
+      margin-top: 10px;
+      height: 150px;
+    width: 150px;
+    border: 1px dotted BLACK;
+    &quot;&amp;gt;
+
+     &amp;lt;/div&amp;gt;
+
+      &amp;lt;div class=&quot;dol&quot; id=&quot;dol&quot; name=&quot;dol&quot; style=&quot; margin-top: 4%; &quot;&amp;gt;
+    &amp;lt;form action=&quot;&quot;&amp;gt;
+   &amp;lt;input type=&quot;radio&quot; name=&quot;dol&quot; value=&quot;zgrzew&quot;&amp;gt; zgrzew&amp;lt;br&amp;gt;
+   &amp;lt;input type=&quot;radio&quot; name=&quot;dol&quot; value=&quot;tunel&quot;&amp;gt; tunel&amp;lt;br&amp;gt;
+   &amp;lt;input type=&quot;radio&quot; name=&quot;dol&quot; value=&quot;szycie&quot;&amp;gt; szycie&amp;lt;br&amp;gt;
+   &amp;lt;input type=&quot;radio&quot; name=&quot;dol&quot; value=&quot;dociecie&quot;&amp;gt; docięcie&amp;lt;br&amp;gt;
+   oczka co: &amp;lt;input style=&quot;display: inline-block; max-width:5%; min-width:5%; 
+   max-height:3%; margin-left: 1%;&quot; type=&quot;number&quot; name=&quot;goraoczka&quot; value=&quot;&quot;&amp;gt;&amp;lt;br&amp;gt;
+   tunel cm: &amp;lt;input style=&quot;display: inline-block; max-width:5%; min-width:5%; 
+   max-height:3%; margin-left: 1%;&quot; type=&quot;number&quot; name=&quot;goratunel&quot; value=&quot;&quot;&amp;gt;&amp;lt;br&amp;gt;
+
+   &amp;lt;/form&amp;gt;
+     &amp;lt;/div&amp;gt;
+
+   &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Example: &lt;a href=&quot;https://jsfiddle.net/jwe8h49z/&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://jsfiddle.net/jwe8h49z/&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52813461</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Internal testing in Google Play doesn&#39;t send out emails</title>
+            <category scheme="https://stackoverflow.com/tags" term="android" />
+            <category scheme="https://stackoverflow.com/tags" term="release-management" />
+            <category scheme="https://stackoverflow.com/tags" term="google-console-developer" />
+        <author>
+            <name>tore</name>
+            <uri>https://stackoverflow.com/users/9493704</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52813461/internal-testing-in-google-play-doesnt-send-out-emails" />
+        <published>2018-10-15T09:20:22Z</published>
+        <updated>2018-10-15T09:59:24Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have successfully uploaded my &lt;code&gt;APK&lt;/code&gt; to &lt;code&gt;Google Console&lt;/code&gt; and set my own email adress as tester for internal testing. But when I Submit the app for internal testing I don&#39;t receive any mail. As you can see the email is correct and the &lt;code&gt;APK&lt;/code&gt; has been uploaded correctly. Have I missed a step or done something wrong? Don&#39;t understand.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/q2yFO.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/q2yFO.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/S9dDU.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/S9dDU.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/sYX67.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/sYX67.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;
+&lt;a href=&quot;https://i.stack.imgur.com/FssOn.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/FssOn.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52813280</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Spring admin server not working with security</title>
+            <category scheme="https://stackoverflow.com/tags" term="spring-boot" />
+            <category scheme="https://stackoverflow.com/tags" term="spring-security" />
+        <author>
+            <name>EspringDev</name>
+            <uri>https://stackoverflow.com/users/10232467</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52813280/spring-admin-server-not-working-with-security" />
+        <published>2018-10-15T09:09:20Z</published>
+        <updated>2018-10-15T09:59:20Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have spring boot admin client application running fine. As i dont want any one to access admin module, thus trying to  add security to Admin module by&lt;/p&gt;
+
+&lt;p&gt;1 - build.gradle - un-commented lines in below code&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;dependencies {
+    //compile(&#39;org.springframework.boot:spring-boot-starter-security&#39;)
+    compile(&#39;org.springframework.boot:spring-boot-starter-web&#39;)
+    compile(&#39;de.codecentric:spring-boot-admin-starter-server&#39;)
+    compile(&#39;de.codecentric:spring-boot-admin-server-ui&#39;)
+    testCompile(&#39;org.springframework.boot:spring-boot-starter-test&#39;)
+    //testCompile(&#39;org.springframework.security:spring-security-test&#39;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2 -  added security configuration to main class&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@EnableAdminServer
+@Configuration
+@SpringBootApplication
+public class AdminmonitorApplication {
+
+private static final Logger log = LoggerFactory.getLogger(AdminmonitorApplication.class);
+
+public static void main(String[] args) {
+    SpringApplication.run(AdminmonitorApplication.class, args);
+}
+
+@Configuration
+public static class SecurityConfig extends WebSecurityConfigurerAdapter {
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.formLogin().loginPage(&quot;/login.html&quot;).loginProcessingUrl(&quot;/login&quot;).permitAll();
+        http.logout().logoutUrl(&quot;/logout&quot;);
+        http.csrf().disable();
+
+        http.authorizeRequests().antMatchers(&quot;/login.html&quot;, &quot;/**/*.css&quot;, &quot;/img/**&quot;, &quot;/third-party/**&quot;).permitAll();
+        http.authorizeRequests().antMatchers(&quot;/**&quot;).authenticated();
+
+        http.httpBasic();
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3 - added credentials to property file&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; spring.application.name=spring-boot-admin-server
+ security.user.name=admin
+ security.user.password=admin
+ server.port=8888
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As a result i got login page when server starts. But click login after entering credentials, receive &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Whitelabel Error Page This application has no explicit mapping for
+  /error, so you are seeing this as a fallback.&lt;/p&gt;
+  
+  &lt;p&gt;Mon Oct 15 14:19:17 IST 2018 There was an unexpected error
+  (type=Method Not Allowed, status=405). Request method &#39;POST&#39; not supported&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Can see below console log  during starting of application&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[main] INFO  d.c.b.a.s.w.s.AdminControllerHandlerMapping - Mapped &quot;{[/login],methods=[GET],produces=[text/html]}&quot; onto public java.lang.String de.codecentric.boot.admin.server.ui.web.UiController.login()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and below log when request is made&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; [http-nio-8888-exec-5] WARN  o.s.w.s.PageNotFound - Request method &#39;POST&#39; not supported
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52812932</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">CGAffineTransform rotation and setting the angle</title>
+            <category scheme="https://stackoverflow.com/tags" term="swift" />
+            <category scheme="https://stackoverflow.com/tags" term="core-graphics" />
+            <category scheme="https://stackoverflow.com/tags" term="cgaffinetransform" />
+        <author>
+            <name>ORStudios</name>
+            <uri>https://stackoverflow.com/users/1040024</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52812932/cgaffinetransform-rotation-and-setting-the-angle" />
+        <published>2018-10-15T08:51:30Z</published>
+        <updated>2018-10-15T09:59:46Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Is there an issue with the code below? I want to rotate my video90 degrees but whenever I try it the rotation returns a black screen.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let degrees : Double = 90; //the value in degrees
+let rotate: CGAffineTransform = new.concatenating(CGAffineTransform(rotationAngle: CGFloat(degrees * .pi/180) ))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To test that the actual video is there, I have tried with the following and it does show on screen but obviously no rotation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;new.concatenating(CGAffineTransform(rotationAngle: CGFloat(0) ))
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52812137</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">control pinterest save button find image result</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="pinterest" />
+        <author>
+            <name>checheyue</name>
+            <uri>https://stackoverflow.com/users/10505973</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52812137/control-pinterest-save-button-find-image-result" />
+        <published>2018-10-15T07:57:31Z</published>
+        <updated>2018-10-15T09:59:26Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;i want to add &#39;save button&#39; in my site, and i use:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a href=&quot;https://www.pinterest.com/pin/create/button/&quot; data-pin-do=&quot;buttonBookmark&quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;but my page has iframe from youtube, and i don&#39;t want to add video  thumbnail in to  the save button result.()&lt;/p&gt;
+
+&lt;p&gt;i tried add &lt;code&gt;nopin=&quot;nopin&quot;&lt;/code&gt; ,but it only works in img tag,
+and i also tried add&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;a data-pin-do=&quot;buttonBookmark&quot; data-pin-tall=&quot;true&quot; href=&quot;https://www.pinterest.com/pin/create/button/&quot; data-pin-media data-pin-media=&#39;image.jpg;image2.jpg;image3.jpg;image4.jpg&#39;&amp;gt;&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;because i have multiple image in the page,but this turns out &lt;code&gt;data-pin-media&lt;/code&gt; can only useful for one image case.
+is there any way to add &#39;save button&#39; and specify multiple images in the save button find image result or prevent youtube video in the save button find image result .
+here is the API:
+&lt;a href=&quot;https://developers.pinterest.com/docs/widgets/save/&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://developers.pinterest.com/docs/widgets/save/&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52811951</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">How do I store multiple arrays of strings at runtime, in C?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c" />
+            <category scheme="https://stackoverflow.com/tags" term="arrays" />
+            <category scheme="https://stackoverflow.com/tags" term="string" />
+            <category scheme="https://stackoverflow.com/tags" term="syntax" />
+        <author>
+            <name>Marcus</name>
+            <uri>https://stackoverflow.com/users/7591509</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52811951/how-do-i-store-multiple-arrays-of-strings-at-runtime-in-c" />
+        <published>2018-10-15T07:44:30Z</published>
+        <updated>2018-10-15T09:59:45Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have created multiple arrays of strings during runtime and have knowledge of the number of arrays that need to be stored. &lt;/p&gt;
+
+&lt;p&gt;I want to store them or point to them. I am not sure how to do this or about the syntax and cannot find tutorials. I believe this can be done with struct or char** []?&lt;/p&gt;
+
+&lt;p&gt;I essentially want this behavior except not creating the string arrays till run time.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  struct arrayholder{
+   const char **argv;
+  };
+
+  char *str_arr1[] = { &quot;sdfddsf&quot;, &quot;foo1&quot;, 0 };
+  char *str_arr2[] = { &quot;sdsosdfrt&quot;, &quot;foo2&quot;, 0 };
+  char *str_arr3[] = { &quot;grsdsfdep&quot;, &quot;foo3&quot;, 0 };
+
+
+  struct arrayholder the_arrays [] = { {str_arr1},{str_arr2},{str_arr3} };
+
+//      The contents should look like,
+//         the_arrays[0] ==&amp;gt; {str_arr1}
+//         the_arrays[0].argv[0] ==&amp;gt; &quot;sdfddsf&quot;
+//         the_arrays[0].argv[1] ==&amp;gt; &quot;foo1&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52811827</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Pytest: Run all tests in superclass</title>
+            <category scheme="https://stackoverflow.com/tags" term="python" />
+            <category scheme="https://stackoverflow.com/tags" term="pytest" />
+        <author>
+            <name>taper</name>
+            <uri>https://stackoverflow.com/users/3383878</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52811827/pytest-run-all-tests-in-superclass" />
+        <published>2018-10-15T07:37:08Z</published>
+        <updated>2018-10-15T09:59:53Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I want to run all the test methods inherited from another class. Is there a way to do so? For example, for the following code, I want &lt;code&gt;pytest&lt;/code&gt; to test all the test methods of &lt;code&gt;TestTwo&lt;/code&gt; and &lt;code&gt;TestTwelve&lt;/code&gt; inherited from &lt;code&gt;Test&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre class=&quot;lang-py prettyprint-override&quot;&gt;&lt;code&gt;class Test:
+
+    def __init__(self, n):
+        self.n = n
+
+    def test_even(self):
+        assert self.n % 2 == 0
+
+    def test_not_big(self):
+        assert self.n &amp;lt; 100
+
+
+class TestTwo(Test):
+
+    def __init__(self):
+        super(TestTwo, self).__init__(2)
+
+
+class TestTwelve(Test):
+
+    def __init__(self):
+        super(TestTwelve, self).__init__(12)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, &lt;code&gt;pytest&lt;/code&gt; complains the existence of a &lt;code&gt;__init__&lt;/code&gt; constructor. I want a way to circumvent this. &lt;/p&gt;
+
+&lt;p&gt;The overall goal is to make my tests more modular so that I can test similar problems on multiple classes.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52805223</id>
+        <re:rank scheme="https://stackoverflow.com">4</re:rank>
+        <title type="text">Split a list into non-empty sub-lists in Haskell</title>
+            <category scheme="https://stackoverflow.com/tags" term="haskell" />
+        <author>
+            <name>John Dimitriou</name>
+            <uri>https://stackoverflow.com/users/10503579</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52805223/split-a-list-into-non-empty-sub-lists-in-haskell" />
+        <published>2018-10-14T17:25:43Z</published>
+        <updated>2018-10-15T09:59:37Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;e all have noticed the moon before, whether we were driving, camping or simply staring up at the sky. The moon is a miraculous thing, controlling the tides and, supposedly, controlling our moods. No matter what you believe, here are forty songs about the moon, from various genres, in no particular order.&lt;/p&gt;
+
+&lt;p&gt;“Moon Baby” is a song by Godsmack, off of their 1997 debut, self-titled album. Lyrics include, “let’s take a blast to the moon baby” and “why is it everyday that I feel the pain.”&lt;/p&gt;
+
+&lt;p&gt;“Brain Damage” is a song by Pink Floyd, off of their 1973 album, The Dark Side of the Moon. Lyrics include, “the lunatic is on the grass” and “if your head explodes with dark forebodings too / I’ll see you on the dark side of the moon.”&lt;/p&gt;
+
+&lt;p&gt;“Dancin’ in the Moonlight” is a song by Thin Lizzy, off of their 1977 album, Bad Reputation. Lyrics include, “but I’m dancing in the moonlight / it’s caught me in its spotlight / it’s alright, alright / dancing in the moonlight / on this long hot summer night.”&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52804824</id>
+        <re:rank scheme="https://stackoverflow.com">1</re:rank>
+        <title type="text">golang net/smtp getting smtp server response DSN</title>
+            <category scheme="https://stackoverflow.com/tags" term="email" />
+            <category scheme="https://stackoverflow.com/tags" term="go" />
+            <category scheme="https://stackoverflow.com/tags" term="smtp" />
+        <author>
+            <name>Ram</name>
+            <uri>https://stackoverflow.com/users/1191999</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52804824/golang-net-smtp-getting-smtp-server-response-dsn" />
+        <published>2018-10-14T16:35:56Z</published>
+        <updated>2018-10-15T09:59:44Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am using golang net/smtp to send mails &lt;/p&gt;
+
+&lt;p&gt;Whenever I send to my smtp server I need to capture the response from the server 
+Especially the DSN &lt;/p&gt;
+
+&lt;p&gt;For example my local smtp server gives a &quot;ok queued as &quot;  at the end of the mail &lt;/p&gt;
+
+&lt;p&gt;I need to capture this and print in the logs &lt;/p&gt;
+
+&lt;p&gt;How can I do this &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package main
+
+import (
+    &quot;log&quot;
+    &quot;net/smtp&quot;
+)
+
+func sendEmail(msg []byte) {
+    c, err := smtp.Dial(&quot;localhost:25&quot;)
+    if err != nil {
+        log.Fatal(err)
+    }
+    if err := c.Mail(&quot;sender@example.org&quot;); err != nil {
+        log.Fatal(err)
+    }
+
+    if err := c.Rcpt(&quot;recipient@example.net&quot;); err != nil {
+        log.Fatal(err)
+    }
+    wc, err := c.Data()
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    _, err = wc.Write(msg)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    //How do I get the response here ??
+    err = wc.Close()
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    err = c.Quit()
+    if err != nil {
+        log.Fatal(err)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52791980</id>
+        <re:rank scheme="https://stackoverflow.com">3</re:rank>
+        <title type="text">Compiler optimization eliminates effects of false sharing. How?</title>
+            <category scheme="https://stackoverflow.com/tags" term="c++" />
+            <category scheme="https://stackoverflow.com/tags" term="loops" />
+            <category scheme="https://stackoverflow.com/tags" term="openmp" />
+            <category scheme="https://stackoverflow.com/tags" term="compiler-optimization" />
+            <category scheme="https://stackoverflow.com/tags" term="false-sharing" />
+        <author>
+            <name>Slavistan Slavistan</name>
+            <uri>https://stackoverflow.com/users/10404950</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52791980/compiler-optimization-eliminates-effects-of-false-sharing-how" />
+        <published>2018-10-13T10:31:55Z</published>
+        <updated>2018-10-15T09:59:37Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m trying to replicate the effects of false sharing using OpenMP as explained in the &lt;a href=&quot;https://www.youtube.com/watch?v=OuzYICZUthM&quot; rel=&quot;nofollow noreferrer&quot;&gt;OpenMP introduction by Tim Mattson&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My program performs a straightforward numerical integration (see the link for the mathematical details) and I&#39;ve implemented two versions, the first of which is supposed to be cache-friendly having each thread keep a local variable to accumulate its portion of the index space,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const auto num_slices = 100000000; 
+const auto num_threads = 4;  // Swept from 1 to 9 threads
+const auto slice_thickness = 1.0 / num_slices;
+const auto slices_per_thread = num_slices / num_threads;
+
+std::vector&amp;lt;double&amp;gt; partial_sums(num_threads);
+
+#pragma omp parallel num_threads(num_threads)
+{
+  double local_buffer = 0;
+  const auto thread_num = omp_get_thread_num();
+  for(auto slice = slices_per_thread * thread_num; slice &amp;lt; slices_per_thread * (thread_num + 1); ++slice)
+    local_buffer += func(slice * slice_thickness); // &amp;lt;-- Updates thread-exclusive buffer
+  partial_sums[thread_num] = local_buffer; 
+}
+// Sum up partial_sums to receive final result
+// ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;while the second version has each thread update an element in a shared &lt;code&gt;std::vector&amp;lt;double&amp;gt;&lt;/code&gt;, causing each write to invalidate the cache lines on all other threads&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// ... as above
+#pragma omp parallel num_threads(num_threads)
+{
+  const auto thread_num = omp_get_thread_num();
+  for(auto slice = slices_per_thread * thread_num; slice &amp;lt; slices_per_thread * (thread_num + 1); ++slice)
+    partial_sums[thread_num] += func(slice * slice_thickness); // &amp;lt;-- Invalidates caches
+}
+// Sum up partial_sums to receive final result
+// ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The problem is that &lt;strong&gt;I am unable to see any effects of false sharing whatsoever unless I turn off optimization&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/dG1x4.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/dG1x4.png&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Compiling my code (which has to account for a few more details than the snippets above) using GCC 8.1 without optimization (-O0) yields the results I naively expected while using full optimization (-O3) eliminates any difference in terms of performance between the two versions, as shown in the plot. &lt;/p&gt;
+
+&lt;p&gt;What&#39;s the explanation for this? Does the compiler actually eliminate false sharing? If not, how come the effect is so small when running the optimized code?&lt;/p&gt;
+
+&lt;p&gt;I&#39;m on a Core-i7 machine using Fedora. The plot displays mean values whose sample standard deviations don&#39;t add any information to this question.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52776788</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Can&#39;t get element from dict by overwritten key in jest tests</title>
+            <category scheme="https://stackoverflow.com/tags" term="javascript" />
+            <category scheme="https://stackoverflow.com/tags" term="testing" />
+            <category scheme="https://stackoverflow.com/tags" term="mocking" />
+            <category scheme="https://stackoverflow.com/tags" term="jest" />
+        <author>
+            <name>Lev Lybin</name>
+            <uri>https://stackoverflow.com/users/1596741</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52776788/cant-get-element-from-dict-by-overwritten-key-in-jest-tests" />
+        <published>2018-10-12T09:44:46Z</published>
+        <updated>2018-10-15T09:59:23Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;my_issue.js&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const SPEAKERS = {
+    &#39;en-us&#39;: &#39;Amy&#39;,
+    &#39;de-de&#39;: &#39;Vicki&#39;,
+    &#39;fr-fr&#39;: &#39;Mathieu&#39;,
+    &#39;ru-ru&#39;: &#39;oksana&#39;
+};
+
+let language_code = &#39;ru-ru&#39;;
+let speed = &#39;0.0&#39;;
+
+let data = {};
+
+function do_it() {
+    data.a = &#39;good&#39;;
+    data.e = language_code in SPEAKERS;
+    data.b = SPEAKERS[language_code];
+    data.c = speed;
+    data.d = language_code;
+}
+
+do_it();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;my_issue.test.js&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let testModule = require(&#39;../my_issue&#39;);
+
+let do_it = testModule.__get__(&#39;do_it&#39;);
+
+
+describe(&#39;do_it&#39;, () =&amp;gt; {
+    it(&#39;do_it&#39;, () =&amp;gt; {
+        testModule.__set__(&#39;language_code&#39;, &#39;en-us&#39;);
+        testModule.__set__(&#39;speed&#39;, &#39;1.0&#39;);
+
+        do_it();
+        let language_code = testModule.__get__(&#39;language_code&#39;);
+        expect(language_code).toEqual(&#39;en-us&#39;);
+
+        let data = testModule.__get__(&#39;data&#39;);
+        expect(data.a).toEqual(&#39;good&#39;);
+        expect(data.c).toEqual(&#39;1.0&#39;);  // overwritten success
+        expect(data.d).toEqual(&#39;en-us&#39;);  // overwritten success
+        expect(data.e).toEqual(true);  // key exists in dict
+        expect(data.b).toEqual(&#39;Amy&#39;);  // &amp;lt;&amp;lt;-- undefined SPEAKERS[language_code]
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hello, I have problem, when I ovveride language_code then I can&#39;t get element from SPEAKERS with existing key. As you can see, &quot;speed&quot; was overwritten successfully. What I do wrong? Thanks all.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52776499</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Singularity - Centos7 - Permission</title>
+            <category scheme="https://stackoverflow.com/tags" term="centos7" />
+            <category scheme="https://stackoverflow.com/tags" term="singularity-container" />
+        <author>
+            <name>DalinDad</name>
+            <uri>https://stackoverflow.com/users/9364605</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52776499/singularity-centos7-permission" />
+        <published>2018-10-12T09:30:20Z</published>
+        <updated>2018-10-15T09:59:29Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;i use &lt;a href=&quot;https://singularity.lbl.gov/&quot; rel=&quot;nofollow noreferrer&quot; title=&quot;Singularity&quot;&gt;singularity&lt;/a&gt; on Centos7 system, but i block on incomprehensible like-permission problem.&lt;/p&gt;
+
+&lt;p&gt;(It&#39;s a centrifuge/recentrifuge container made by myself that perfectly working on Ubuntu system)&lt;/p&gt;
+
+&lt;h1&gt;command&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;singularity exec /HOMEPATH/Singularity/centrifuge_recentrifuge.simg centrifuge -x /HOMEPATH/Centrifuge/bacteria-database-centrifuge -1 /HOMEPATH/work_directory/centrifuge_recentrifuge/reads/TTOTO_R1_001.fastq.gz -2 /HOMEPATH/work_directory/centrifuge_recentrifuge/reads/TOTO_R2_001.fastq.gz -S /HOMEPATH/work_directory/centrifuge_recentrifuge/classification_result --report-file /HOMEPATH/work_directory/centrifuge_recentrifuge/classification_summary
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1&gt;&#160;error log&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;Error: Could not open alignment output file /HOMEPATH/work_directory/centrifuge_recentrifuge/classification_result
+Error: Encountered internal Centrifuge exception (#1)
+Command: /usr/local/bin/centrifuge-class --wrapper basic-0 -x /HOMEPATH/Centrifuge/bacteria-database-centrifuge -S /HOMEPATH/work_directory/centrifuge_recentrifuge/classification_result --report-file /HOMEPATH/work_directory/centrifuge_recentrifuge/classification_summary -1 /tmp/229778.inpipe1 -2 /tmp/229778.inpipe2 
+(ERR): centrifuge-class exited with value 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&#39;s seeem like singularity can not write the tmp files or write the &lt;code&gt;classification_result&lt;/code&gt; file or the both :/&lt;/p&gt;
+
+&lt;h1&gt;work directory permission&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;ls -Z /HOMEPATH/work_directory/centrifuge_recentrifuge/
+drwxr-xr-x. root root system_u:object_r:httpd_sys_content_t:s0 reads
+
+ls -Z /HOMEPATH/work_directory/centrifuge_recentrifuge/reads/
+-rw-r--r--. root root system_u:object_r:httpd_sys_content_t:s0 TOTO_R1_001.fastq.gz
+-rw-r--r--. root root system_u:object_r:httpd_sys_content_t:s0 TOTO_R2_001.fastq.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;EDIT 1 Resolve Permission Problem&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;ls -Z centrifuge_recentrifuge
+drwxr-xr-x. apache apache system_u:object_r:httpd_sys_content_t:s0 reads
+
+ls -Z centrifuge_recentrifuge/reads/
+-rw-r--r--. apache apache system_u:object_r:httpd_sys_content_t:s0 TOTO_R1_001.fastq.gz
+-rw-r--r--. apache apache system_u:object_r:httpd_sys_content_t:s0 TOTO_R2_001.fastq.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/52756373</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">DAX - Creating a measure in power BI which ignores all filters except one</title>
+            <category scheme="https://stackoverflow.com/tags" term="powerbi" />
+            <category scheme="https://stackoverflow.com/tags" term="dax" />
+            <category scheme="https://stackoverflow.com/tags" term="powerbi-desktop" />
+        <author>
+            <name>Naz</name>
+            <uri>https://stackoverflow.com/users/5567461</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/52756373/dax-creating-a-measure-in-power-bi-which-ignores-all-filters-except-one" />
+        <published>2018-10-11T09:12:09Z</published>
+        <updated>2018-10-15T09:59:25Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am trying to write a measure called Items Per Lift, which is calculated as follows:&lt;/p&gt;
+
+&lt;p&gt;Count of Report Items / Count of Lifts&lt;/p&gt;
+
+&lt;p&gt;I have a Line and Stacked Column chart, where this measure will be used. It currently shows the number of Report Items per engineer on the bars. I want to add a line which uses the above measure. I want to make sure that the denominator side of the measure (the right hand side) always uses the number of lifts per engineer in total, and never gets filtered further than that. The numerator (left side) of measure can be filtered depending on slicers selected on the page, etc&lt;/p&gt;
+
+&lt;p&gt;The data is contained in two tables, &#39;Insurance Matrix&#39; and &#39;ANSAPBILifts&#39;. ANSAPBILifts contains 8016 rows in total. The data in each table is as follows:&lt;/p&gt;
+
+&lt;p&gt;Insurance Matrix - contains all Report Items&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Report Item          SiteIDLine
+1                    1212
+2                    1212
+3                    1256
+4                    1443
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ANSAPBILifts - contains a list of all lifts with engineer assigned to each lift:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SiteIDLine           Engineer ID
+1212                 MRob
+1256                 MRob
+1443                 PCli
+1554                 PCli
+1599                 AKen
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So the measure should always contain 2 on the denominator side for engineer MRob, it should always be 2 for engineer PCli, and it should always be 1 for engineer AKen, etc&lt;/p&gt;
+
+&lt;p&gt;I wrote the following for the measure originally:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Items per Lift = divide(count(&#39;Insurance Matrix&#39;[Report Item]),(COUNT(ANSAPBILifts[SiteIDLine])))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, both the numerator and denominator would always get filtered with this measure. &lt;/p&gt;
+
+&lt;p&gt;So I then used:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Items per LiftALL = divide(count(&#39;Insurance Matrix&#39;[Report Item]),CALCULATE(COUNT(ANSAPBILifts[SiteIDLine]),ALLEXCEPT(ANSAPBILifts,ANSAPBILifts[Engineer ID])))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;However, this results in the same measure as the first attempt, ie both sides of the measure are filtered if any slicers are used on the page.&lt;/p&gt;
+
+&lt;p&gt;At this point I am a bit confused as to what to try next. If anyone can help it would be very appreciated&lt;/p&gt;
+
+&lt;p&gt;See below chart with data, no filters applied on this chart, the measure is correct at this point:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/HIWWo.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/HIWWo.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;See below chart with data, some filters have been applied on this page, the measure is now incorrect at this point, the denominator has now changed but I need it to remain the same:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/0ZR0G.jpg&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/0ZR0G.jpg&quot; alt=&quot;enter image description here&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;See below sample PBIX file:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://1drv.ms/u/s!AuiIgc_S9J5JhbM3cwRUmx21FuUIUQ&quot; rel=&quot;nofollow noreferrer&quot;&gt;https://1drv.ms/u/s!AuiIgc_S9J5JhbM3cwRUmx21FuUIUQ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Many thanks for any and all help&lt;/p&gt;
+
+&lt;p&gt;Cheers&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/50985062</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">How to bundle a React app to work in ANY subdirectory on a server?</title>
+            <category scheme="https://stackoverflow.com/tags" term="reactjs" />
+            <category scheme="https://stackoverflow.com/tags" term="deployment" />
+            <category scheme="https://stackoverflow.com/tags" term="build" />
+        <author>
+            <name>Marc</name>
+            <uri>https://stackoverflow.com/users/645104</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/50985062/how-to-bundle-a-react-app-to-work-in-any-subdirectory-on-a-server" />
+        <published>2018-06-22T09:38:40Z</published>
+        <updated>2018-10-15T09:59:46Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/37396427/how-to-bundle-a-react-app-to-a-subdirectory-on-a-server&quot;&gt;This SO thread&lt;/a&gt; explains how to bundle a react app for deployment to a specific subdirectory on a web server. I would like to bundle my react app to work on &lt;strong&gt;any&lt;/strong&gt; subdirectory on my webserver. In other words: Is it possible to build a react app, such that I can move it from&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://server/foo&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://server/foo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://server/bar&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://server/bar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://server/foo/bar&quot; rel=&quot;nofollow noreferrer&quot;&gt;http://server/foo/bar&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;without rebuilding or changing anything?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/50975210</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">attach documents in send email api using rest assured</title>
+            <category scheme="https://stackoverflow.com/tags" term="api" />
+            <category scheme="https://stackoverflow.com/tags" term="rest-assured" />
+        <author>
+            <name>Sachin Singh</name>
+            <uri>https://stackoverflow.com/users/4130574</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/50975210/attach-documents-in-send-email-api-using-rest-assured" />
+        <published>2018-06-21T18:18:13Z</published>
+        <updated>2018-10-15T09:59:29Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;&lt;a href=&quot;https://i.stack.imgur.com/6fR3C.png&quot; rel=&quot;nofollow noreferrer&quot;&gt;&lt;img src=&quot;https://i.stack.imgur.com/6fR3C.png&quot; alt=&quot;this is my code&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;this is my response: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &quot;Message360&quot;: {
+        &quot;ResponseStatus&quot;: 0,
+        &quot;Errors&quot;: {
+            &quot;Error&quot;: [
+                {
+                    &quot;Code&quot;: &quot;ER-M360-EML-109&quot;,
+                    &quot;Message&quot;: &quot;Attachment&#39;s file extension is not allowed.&quot;,
+                    &quot;MoreInfo&quot;: []
+                },
+                {
+                    &quot;Code&quot;: &quot;ER-M360-EML-108&quot;,
+                    &quot;Message&quot;: &quot;Attachment size must be up to 7 MB.&quot;,
+                    &quot;MoreInfo&quot;: []
+                }
+            ]
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I also tried using multipart and its not working, any help if possible please?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/19249962</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">Manually generating an adobe after effects project</title>
+            <category scheme="https://stackoverflow.com/tags" term="adobe" />
+            <category scheme="https://stackoverflow.com/tags" term="reverse-engineering" />
+            <category scheme="https://stackoverflow.com/tags" term="after-effects" />
+        <author>
+            <name>Adam</name>
+            <uri>https://stackoverflow.com/users/1433329</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/19249962/manually-generating-an-adobe-after-effects-project" />
+        <published>2013-10-08T14:06:55Z</published>
+        <updated>2018-10-15T09:59:24Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I need to do some automatic rendering with some high quality codecs which currently can only be found in Adobe After Effects.&lt;/p&gt;
+
+&lt;p&gt;I saved the project (both as aep and as aepx) but the majority of the project settings are just bunch of meaningless (for me) numbers.&lt;/p&gt;
+
+&lt;p&gt;Is there any way or any tool (even non-free ones) that do this kind of generation?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>https://stackoverflow.com/q/1345398</id>
+        <re:rank scheme="https://stackoverflow.com">0</re:rank>
+        <title type="text">winsdor register a generic type with constructor parameter</title>
+            <category scheme="https://stackoverflow.com/tags" term="castle-windsor" />
+            <category scheme="https://stackoverflow.com/tags" term="ioc-container" />
+        <author>
+            <name>Omu</name>
+            <uri>https://stackoverflow.com/users/112100</uri>
+        </author>
+        <link rel="alternate" href="https://stackoverflow.com/questions/1345398/winsdor-register-a-generic-type-with-constructor-parameter" />
+        <published>2009-08-28T06:46:38Z</published>
+        <updated>2018-10-15T09:59:40Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;i have somthing like this   &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; MyRepository&amp;lt;T&amp;gt; : IRepository&amp;lt;T&amp;gt; {
+
+  public MyRepository(string cs){
+   ....
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+
+&lt;p&gt;so i need to register in winsdor this generic type and give him a parameter &lt;/p&gt;
+
+&lt;p&gt;i&#39;ve been trying to do this like so :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Type t = typeof(IRepository&amp;lt;&amp;gt;);
+Type t1 = typeof(Repository&amp;lt;&amp;gt;);
+Hashtable props = new Hashtable(); 
+props.Add(&quot;cs&quot;, &quot;myconnstring&quot;);
+container.AddComponentWithProperties(&quot;key1&quot;, t, t1, props);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and i get the following error&lt;/p&gt;
+
+&lt;p&gt;Can&#39;t create component &#39;key1&#39; as it has dependencies to be satisfied. 
+key1 is waiting for the following dependencies: &lt;/p&gt;
+
+&lt;p&gt;Keys (components with specific keys)
+- cs which was not registered. &lt;/p&gt;
+
+        </summary>
+    </entry>
+</feed>
